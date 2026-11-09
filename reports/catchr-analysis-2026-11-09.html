@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="Catchr 中文公开研究报告：身份与时间线、用户路径、AI边界、增长、商业化、评论样本、竞品和产品借鉴。2026-11-09，北京时间；未安装实测，未观看视频。"><title>Catchr 竞品深度分析｜公开研究 · 2026-11-09</title><style>
+:root{--ink:#19352f;--text:#31443f;--muted:#66766f;--paper:#fffefa;--bg:#f1f3ed;--line:#dce3d9;--accent:#176b59;--gold:#9c692c;--serif:Georgia,"Noto Serif CJK SC","Songti SC",SimSun,serif;--sans:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:32px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.95 var(--sans);text-rendering:optimizeLegibility}a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.2em;overflow-wrap:anywhere}a:hover{color:#9b5c18}a:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #c48c40;outline-offset:4px}::selection{background:#d2e7d9}p,li,td,th{overflow-wrap:anywhere}p{margin:1em 0}ul,ol{padding-left:1.6em}li{padding-left:.15em;margin:.3em 0}h1,h2,h3,h4{color:var(--ink);line-height:1.5;scroll-margin-top:32px}h1{font:700 clamp(2rem,4vw,3.3rem)/1.35 var(--serif);letter-spacing:-.035em;margin:20px 0 26px}h2{font:700 1.8rem/1.5 var(--serif);letter-spacing:-.02em;margin:0 0 1.3em}h3{font-size:1.24rem;margin:2.4em 0 .85em}h4{font-size:1.05rem;margin:1.8em 0 .6em;padding-left:12px;border-left:3px solid #a8bdad}hr{border:0;border-top:1px solid var(--line);margin:2.5em 0}
+.masthead{max-width:1300px;margin:auto;padding:25px 40px 18px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #cbd6ca;font-size:11px;letter-spacing:.16em;color:var(--muted)}.brand{color:var(--ink);font-weight:800}.layout{max-width:1300px;margin:auto;display:grid;grid-template-columns:246px minmax(0,1fr);gap:46px;padding:44px 40px 80px}.sidebar{min-width:0}.desktop-toc{position:sticky;top:26px;max-height:calc(100vh - 52px);overflow-y:auto;scrollbar-width:thin;padding-right:12px}.toc-label{font-size:11px;letter-spacing:.16em;font-weight:800;color:var(--muted);margin:0 0 18px}.sidebar nav ol,.mobile-toc nav ol{list-style:none;padding:0;margin:0}.sidebar nav li{margin:0}.sidebar nav a{display:block;text-decoration:none;font-size:12px;line-height:1.65;padding:8px 10px;border-left:2px solid transparent;color:var(--muted)}.sidebar nav a:hover{border-left-color:var(--accent);background:#e6ece2;color:var(--ink)}.sidebar nav li:nth-child(3),.sidebar nav li:nth-last-child(2){margin-top:14px;border-top:1px solid var(--line);padding-top:12px}.toc-foot{font-size:11px;color:var(--muted);margin:24px 10px}.paper{min-width:0;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 42px #20352a06;padding:48px clamp(24px,4.5vw,64px) 60px;border-radius:3px}.eyebrow{font-size:11px;font-weight:800;color:var(--accent);letter-spacing:.18em}.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px;font-size:11px;color:var(--muted)}.hero-meta span{border:1px solid var(--line);border-radius:3px;padding:3px 8px;background:#f6f7f0}.notice{background:#eef3eb;border-left:3px solid var(--accent);padding:15px 18px;margin:0 0 30px;font-size:13px;line-height:1.8}.notice strong{display:block;color:var(--ink);margin-bottom:3px}.report-section{margin-top:64px;padding-top:38px;border-top:1px solid var(--line)}.report-section.summary{margin-top:38px;padding:28px;background:#eef4ed;border:1px solid #dbe5d7;border-top:3px solid var(--accent);border-radius:3px}.summary h2{font-size:1.5rem;margin-bottom:1em}.evidence{background:#fbf6eb;padding:26px;border:1px solid #eadfca}.evidence h2{font-size:1.35rem}.evidence ul{font-size:14px}.citation{font-size:.78em;white-space:nowrap;font-weight:650;text-decoration:none;padding:0 2px}.table-scroll{max-width:100%;overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:4px;scrollbar-width:thin;background:white;-webkit-overflow-scrolling:touch}.table-scroll:focus{outline-offset:2px}table{border-collapse:collapse;width:100%;min-width:560px;font-size:13px;line-height:1.8}th,td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;min-width:100px}th{background:#eaf0e7;color:var(--ink);font-weight:700}tbody tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#f8f9f4}.mobile-toc{display:none}#sources~p,[id^="source-"]{font-size:13px}#sources{margin-bottom:1em}.back-top{position:fixed;bottom:20px;right:22px;text-decoration:none;background:var(--ink);color:white;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font-size:18px;box-shadow:0 3px 12px #19352f20}.back-top:hover{color:white;background:var(--accent)}.footer{border-top:1px solid var(--line);margin-top:44px;padding-top:22px;font-size:12px;line-height:1.8;color:var(--muted)}.skip-link{position:absolute;left:12px;top:-80px;background:white;padding:10px;z-index:5}.skip-link:focus{top:8px}
+@media(min-width:1200px){body{font-size:16px}.paper{padding-left:62px;padding-right:62px}}
+@media(max-width:960px){.layout{grid-template-columns:196px minmax(0,1fr);gap:24px;padding:30px 24px 60px}.paper{padding:32px 30px}.sidebar nav a{font-size:11px}}
+@media(max-width:740px){body{font-size:15px;line-height:1.95}.masthead{padding:18px 20px 14px;letter-spacing:.08em;font-size:10px;gap:10px}.layout{display:block;padding:18px 12px 45px}.sidebar{display:none}.paper{padding:28px 20px 38px;border-radius:4px}.mobile-toc{display:block;margin:22px 0 30px;border:1px solid var(--line);border-radius:4px;background:#f8f9f3}.mobile-toc summary{padding:12px 14px;color:var(--ink);font-size:13px;font-weight:700;cursor:pointer}.mobile-toc nav{padding:0 14px 16px}.mobile-toc nav a{display:block;font-size:12px;text-decoration:none;line-height:1.7;padding:6px 0}.mobile-toc nav li{margin:0}h1{font-size:2.1rem;margin:14px 0 22px}h2{font-size:1.55rem}h3{font-size:1.18rem}.notice{padding:13px 14px;font-size:12px}.hero-meta{gap:6px;font-size:10px}.report-section{margin-top:46px;padding-top:28px}.report-section.summary{padding:20px 16px}.evidence{padding:20px 16px}.evidence ul{font-size:13px}table{font-size:12px}th,td{padding:11px 13px}.back-top{right:14px;bottom:14px;width:38px;height:38px}ul,ol{padding-left:1.4em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@page{size:A4;margin:18mm 16mm}
+@media print{body{background:white;color:#111;font:10pt/1.65 var(--sans)}.masthead{padding:0 0 12px;max-width:none}.layout{display:block;padding:0;max-width:none}.sidebar,.mobile-toc,.back-top,.skip-link{display:none!important}.paper{border:0;box-shadow:none;padding:18px 0}.report-section{margin-top:25px;padding-top:18px;break-before:auto}h1{font-size:26pt}h2{font-size:18pt}h3{font-size:13pt}h2,h3,h4{break-after:avoid}p,li{orphans:3;widows:3}.notice,.summary,.evidence{background:none!important}.table-scroll{overflow:visible;border:0}table{min-width:0;width:100%;table-layout:fixed;font-size:8pt}th,td{min-width:0;padding:6px;border:1px solid #ccc}thead{display:table-header-group}tr{break-inside:avoid}a{color:#184c3b}.footer{font-size:8pt}}
+</style></head>
+<body id="top"><a class="skip-link" href="#report-title">跳至正文</a><header class="masthead"><span class="brand">CATCHR / 产品研究</span><span>公开资料研究 · 2026.11.09</span></header>
+<div class="layout"><aside class="sidebar"><div class="desktop-toc"><div class="toc-label">CONTENTS / 阅读目录</div><nav aria-label="报告目录"><ol><li><a href="#summary">先说结论</a></li><li><a href="#evidence">证据标记说明</a></li><li><a href="#chapter-01">一、身份、运营主体与时间线</a></li><li><a href="#chapter-02">二、目标用户、真实场景与替代方案</a></li><li><a href="#chapter-03">三、逐步用户路径：动机、输入输出与摩擦</a></li><li><a href="#chapter-04">四、功能清单与信息架构</a></li><li><a href="#chapter-05">五、AI的实际作用、技术边界与排名可信度</a></li><li><a href="#chapter-06">六、增长渠道、短视频内容与历史热度</a></li><li><a href="#chapter-07">七、定价、免费边界、收入与下载</a></li><li><a href="#chapter-08">八、用户评论：近期样本带来的重要修正</a></li><li><a href="#chapter-09">九、四个相邻产品的逐项比较</a></li><li><a href="#chapter-10">十、审核、隐私、位置、动物福利及运维成本</a></li><li><a href="#chapter-11">十一、证据支撑的优点、缺点、机会与风险</a></li><li><a href="#chapter-12">十二、对动物与生活兴趣类AI产品的借鉴</a></li><li><a href="#video-checks">视频核验问题</a></li><li><a href="#sources">来源索引</a></li></ol></nav><p class="toc-foot">12 章正文 · 25 项来源<br>3 条待观看核验视频<br>研究日：北京时间 2026-11-09</p></div></aside>
+<main class="paper"><div class="eyebrow">FIELD NOTES / 公开产品研究</div><article id="report"><header><h1 id="report-title">Catchr 竞品深度分析</h1></header><div class="editorial"><div class="hero-meta"><span>2026-11-09 · 北京时间（UTC+8）</span><span>12 章完整长文</span><span>25 项可追溯来源</span></div><div class="notice" role="note"><strong>仅公开研究 · 未安装实测 · 未观看视频</strong>不把官方营销截图当作实机测试。结论、评论样本、财务自述和未知事项分别保留原有口径；历史演示不代表当前体验。</div><details class="mobile-toc"><summary>展开阅读目录 · 12 章与来源索引</summary><nav aria-label="报告目录"><ol><li><a href="#summary">先说结论</a></li><li><a href="#evidence">证据标记说明</a></li><li><a href="#chapter-01">一、身份、运营主体与时间线</a></li><li><a href="#chapter-02">二、目标用户、真实场景与替代方案</a></li><li><a href="#chapter-03">三、逐步用户路径：动机、输入输出与摩擦</a></li><li><a href="#chapter-04">四、功能清单与信息架构</a></li><li><a href="#chapter-05">五、AI的实际作用、技术边界与排名可信度</a></li><li><a href="#chapter-06">六、增长渠道、短视频内容与历史热度</a></li><li><a href="#chapter-07">七、定价、免费边界、收入与下载</a></li><li><a href="#chapter-08">八、用户评论：近期样本带来的重要修正</a></li><li><a href="#chapter-09">九、四个相邻产品的逐项比较</a></li><li><a href="#chapter-10">十、审核、隐私、位置、动物福利及运维成本</a></li><li><a href="#chapter-11">十一、证据支撑的优点、缺点、机会与风险</a></li><li><a href="#chapter-12">十二、对动物与生活兴趣类AI产品的借鉴</a></li><li><a href="#video-checks">视频核验问题</a></li><li><a href="#sources">来源索引</a></li></ol></nav></details></div>
+<p>检索日期：2026年11月9日，北京时间。</p>
+<p>研究对象：Catchr: Fish Identifier，iOS App ID 6744193660；Android 包名 com.steelecodes.fishdexx。不包括同名营销工具、钓鱼游戏或其他 Catchr。</p>
+<p>本报告只使用公开资料：读取了官方商店、官方截图、版本记录、最近50条美国区文字评论、创始人公开披露、学校报道及相邻产品官网。没有注册、下载登录、付费或联系外部。视频仅核对公开元数据、页面描述及可获得文字，没有观看，不把营销截图当成实机测试。</p>
+<section class="report-section summary"><h2 id="summary">先说结论</h2>
+<p>Catchr 不是简单的“拍照识鱼工具”，而是把一次现实中的渔获，转换成“识别结果＋数字收藏＋朋友间可比较的社交记录”。</p>
+<p>它的核心吸引力由三层组成：</p>
+<ol>
+<li>即时反馈：刚钓到的鱼，拍一下就得到鱼种、估计尺寸等结果。</li>
+<li>长期积累：渔获进入收藏、FishBook 和个人水族馆，现实行为留下可反复查看的成果。</li>
+<li>社交比较：朋友、社区、排行榜，让原本只发在群里的照片具有持续比较的载体。</li>
+</ol>
+<p>但深入补证后，不能只讲“爆款成功故事”。近期公开评论反复出现上传卡死、注册后才发现付费墙、Crew 邀请不清楚、客服无响应等问题；一位用户称记录250多条渔获后应用越来越不稳定。它更像一个“概念与传播验证较强、持续服务质量存在明显风险”的消费产品案例。</p>
+<p>本轮还找到一条此前没有的创始人收入原始披露：Brock Anderson 于2026年3月24日北京时间发文称，Catchr 当时“does $15k/mo passively”。这比第三方营收估算更值得参考，但不是审计财报，也不等于当前收入或利润。</p>
+<hr/>
+</section><section class="report-section evidence"><h2 id="evidence">证据标记说明</h2>
+<ul>
+<li>【官】官方商店、官网、官方截图或版本说明：证明产品方当时如何介绍，不代表所有功能已独立实测。</li>
+<li>【创】创始人公开自述：可归属的一手披露，但未经财务或技术审计。</li>
+<li>【媒】学校报道、行业文章、第三方视频索引或截图档案：需留意采访、采集方法和商业利益。</li>
+<li>【评】用户评论：证明有人报告这种体验，不直接证明普遍发生率或技术根因。</li>
+<li>【析】本报告的产品、技术和商业分析，不是 Catchr 已实现的功能。</li>
+</ul>
+<p>文中来源编号对应末尾完整链接。</p>
+</section><section class="report-section"><h2 id="chapter-01">一、身份、运营主体与时间线</h2>
+<h3 id="section-1-1">1.1 当前能够确认的身份</h3>
+<div aria-label="数据表格 1，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已核实内容</th>
+<th>证据与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS 名称</td>
+<td>Catchr: Fish Identifier</td>
+<td>【官】美国区 App Store，检索日可访问。<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></td>
+</tr>
+<tr>
+<td>iOS App ID</td>
+<td>6744193660</td>
+<td>【官】App Store、Apple Lookup 一致。<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></td>
+</tr>
+<tr>
+<td>iOS Bundle ID</td>
+<td>com.steelecodes.fishdexx</td>
+<td>【官】Apple Lookup。<a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></td>
+</tr>
+<tr>
+<td>当前 iOS 卖方</td>
+<td>Smolworks Inc</td>
+<td>【官】商店及 Apple Lookup 一致；Smolworks 开发者页也列有 Catchr。<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a><a class="citation" href="https://apps.apple.com/us/developer/smolworks-inc/id1807171666" rel="noopener noreferrer" title="来源 23 · 打开原始页面">[23]</a></td>
+</tr>
+<tr>
+<td>Android 名称</td>
+<td>Catchr: Fishing App</td>
+<td>【官】Google Play。<a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></td>
+</tr>
+<tr>
+<td>Android 开发者显示</td>
+<td>Catchr Fishing, Inc</td>
+<td>【官】与当前 iOS 卖方名称不同，不能自动视为同一法律主体。<a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></td>
+</tr>
+<tr>
+<td>创始人</td>
+<td>Matthew／Matt Steele；Brock Anderson 为联合创始人</td>
+<td>【创】Matt 出售公告直接感谢“my co-founder Brock Anderson”；学校报道确认 Matthew Steele 创办 Catchr。<a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a><a class="citation" href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer" title="来源 7 · 打开原始页面">[7]</a></td>
+</tr>
+<tr>
+<td>产品网站域名</td>
+<td>getcatchr.com</td>
+<td>【官】两大商店关联该域名；域名关联不等于已核实法律控制主体。<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>重要区别：</p>
+<p>“当前 iOS 发布者是 Smolworks Inc”可以确认；“Smolworks 于某日完整收购 Catchr 公司、全部资产或全部股权”不能据此确认。</p>
+<p>公开交易公告没有披露买方、交易结构、对价或交割日。不能将商店发布者变化直接当作法律收购证明。</p>
+<h3 id="section-1-2">1.2 可重建的时间线</h3>
+<h4 id="heading-7">2025年4月11日：iOS 首次发布</h4>
+<p>Apple 官方 Lookup 的 releaseDate 为2025年4月11日15:00，北京时间。【官】<a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></p>
+<p>这是“首次商店发布”证据，不代表公司成立日、开始开发日或第一次私测日。</p>
+<h4 id="heading-8">2025年4月至5月：已经在用短视频展示产品</h4>
+<p>联合创始人关联账号 @brock.fishes5 的三条具体视频，原页公开元数据可核对：</p>
+<ul>
+<li>2025年4月17日：夜间钓到蓝鳃太阳鱼后进行扫描识别。</li>
+<li>2025年5月21日：围绕“ranked fishing app”展示排行榜。</li>
+<li>2025年5月23日：展示保存、命名渔获及鱼种、重量、长度等信息。</li>
+</ul>
+<p>日期均为北京时间；第三方索引的当地日期可能相差一天。【创／媒】<a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a><a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a><a class="citation" href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer" title="来源 12 · 打开原始页面">[12]</a></p>
+<h4 id="heading-9">2025年7月至8月：收藏与社区功能继续补充</h4>
+<ul>
+<li>2025年7月30日，用户建议加入“未捕获鱼种剪影、捕获后解锁”的图鉴。</li>
+<li>7月31日，开发者回复“We added this!!”。</li>
+<li>8月6日，版本1.6.1说明新增排行榜完整动态流功能。</li>
+</ul>
+<p>【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a></p>
+<p>不能仅凭开发者一句回复推导图鉴的完整规则，但当前官方截图确实出现 FishBook 入口。</p>
+<h4 id="heading-10">2025年9月20日：Matt 公开宣布出售</h4>
+<p>Matt 的 LinkedIn 原帖发布时间转换后为2025年9月20日00:02，北京时间。内容明确说“I just sold my college startup”，称已覆盖170个国家、达到数十万下载，并感谢联合创始人 Brock Anderson。【创】<a class="citation" href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer" title="来源 7 · 打开原始页面">[7]</a></p>
+<p>可以确认：至该公告时，Matt 已公开宣布出售。</p>
+<p>不能确认：精确交割日期、买方、出售的是股份还是产品资产、Brock 是否同步退出。</p>
+<h4 id="heading-11">2026年1月5日：Georgia Tech 发布创业与出售报道</h4>
+<p>报道确认产品使用图像识别、尺寸估计、渔获记录和全球排行榜，并称：</p>
+<ul>
+<li>美国 App Store 体育榜最高第13；</li>
+<li>法国、克罗地亚曾第1；</li>
+<li>累计近20万下载；</li>
+<li>覆盖170多个国家。</li>
+</ul>
+<p>【媒：学校报道，引用创始人】<a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a></p>
+<p>注意：报道日期为2026年1月5日，正文却使用“acquired earlier this year”，与2025年9月已有出售公告的时间表述不一致。应保留这个来源瑕疵，不能据此把收购时间改成2026年。</p>
+<h4 id="heading-12">2025年12月至2026年4月：钓点、评论及维护版本</h4>
+<ul>
+<li>2025年12月26日，1.7.6新增 Fishing spots。</li>
+<li>1.8.1商店说明新增“评论朋友的渔获”。</li>
+<li>当前可查 iOS 最新版本为1.8.2；Apple Lookup 的发布时刻为2026年4月2日03:14，北京时间。商店页面显示“Apr 1”，属于日期展示差异。</li>
+</ul>
+<p>【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></p>
+<p>截至检索日，公开 iOS 版本记录距最近一次发布约七个月。但这不证明后端、运营内容或远程配置也停止更新。</p>
+<h4 id="heading-13">2026年3月24日：Brock 仍公开为 Catchr 招人</h4>
+<p>Brock 发帖招聘 founding engineer，称希望对方承担产品领导职责，并披露当时约“$15k/mo”。【创】<a class="citation" href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer" title="来源 8 · 打开原始页面">[8]</a></p>
+<p>这至少说明：Matt 宣布出售后，Brock 仍在公开参与 Catchr 的经营／招募。它不是完整股权证明。</p>
+<h3 id="section-1-3">1.3 归属仍未查明的部分</h3>
+<ul>
+<li>收购买方和交易对价。</li>
+<li>Smolworks Inc 与 Catchr Fishing, Inc 的具体法律关系。</li>
+<li>当前数据控制者、适用合同主体及管辖法律。</li>
+<li>收购是否包含全部用户数据、知识产权及应用资产。</li>
+</ul>
+<p>原因是当前隐私与条款页未成功读取，详见第十部分。不能用商店开发者名称填补法律文本的缺失。</p>
+</section><section class="report-section"><h2 id="chapter-02">二、目标用户、真实场景与替代方案</h2>
+<p>以下用户分层是基于官方定位、截图和评论的产品分析，不是 Catchr 公布的用户画像统计。</p>
+<h3 id="section-2-1">2.1 目标用户不只一种</h3>
+<h4 id="heading-17">A. 刚开始钓鱼、认不全鱼种的人</h4>
+<p>真实任务：</p>
+<p>“我刚钓到这条鱼，它是什么？大概多大？值得记录吗？”</p>
+<p>识鱼减少查询门槛，结果卡让新手也能获得“我知道自己钓到了什么”的成就感。</p>
+<p>证据：官方识鱼定位；2026年9月12日北京时间，一位评论者称自己是新手，认为产品的提示、地点和目标有帮助。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>边界：不能因此认为其法律尺寸判断或鱼种识别足以替代当地法规确认。</p>
+<h4 id="heading-18">B. 经常钓鱼、想记录个人经历的人</h4>
+<p>真实任务：</p>
+<p>“我今年钓过多少、哪些鱼、用什么饵、哪条是个人最好成绩？”</p>
+<p>这类用户的持续价值可能来自日志，而不是每次都需要 AI 识鱼。</p>
+<p>证据：官方支持饵料、备注、个人最佳和统计；近期评论中，有熟悉鱼种的人明确表示愿意只使用免费日志，而不需要 AI。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>这揭示一个重要矛盾：产品用 AI 获客，却可能有一批长期用户更重视非 AI 的记录基础设施。</p>
+<h4 id="heading-19">C. 和朋友比较渔获的年轻用户</h4>
+<p>真实任务：</p>
+<p>“我们不在同一个地方钓鱼，也想知道最近谁钓得多、谁钓得大。”</p>
+<p>证据：官方“Compete with Friends”、Crew 创建截图；2025年7月25日用户评论称，希望通过榜单与去了不同大学的朋友保持互动，但担心订阅会阻止朋友加入。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a></p>
+<p>这里真正的需求不一定是专业竞赛，而是持续的朋友互动。</p>
+<h4 id="heading-20">D. 喜欢收集、图鉴和视觉反馈的人</h4>
+<p>真实任务：</p>
+<p>“现实中钓到一种新鱼，能不能像解锁游戏角色一样留下成果？”</p>
+<p>证据：FishBook、鱼种卡、Aquarium 官方截图；2026年8月4日北京时间，评论者直接赞扬“像 Pokémon 一样收集鱼”。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<h3 id="section-2-2">2.2 它替代的不是一个应用，而是几段零散行为</h3>
+<div aria-label="数据表格 2，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>用户原有做法</th>
+<th>能满足什么</th>
+<th>Catchr 提供的增量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>手机相册</td>
+<td>留下照片</td>
+<td>增加鱼种结构化、统计、收藏和比较</td>
+</tr>
+<tr>
+<td>微信／WhatsApp／Discord群</td>
+<td>晒鱼、口头比大小</td>
+<td>提供持续记录与可见排行榜</td>
+</tr>
+<tr>
+<td>搜图、识物工具</td>
+<td>查询鱼种</td>
+<td>将识别结果直接接入日志和收藏</td>
+</tr>
+<tr>
+<td>纸质日志／表格</td>
+<td>长期记录</td>
+<td>降低录入门槛，增加视觉反馈</td>
+</tr>
+<tr>
+<td>尺子、秤</td>
+<td>实际测量</td>
+<td>Catchr 声称可估计，但不能视为同等精度替代</td>
+</tr>
+<tr>
+<td>Fishbrain、FishAngler</td>
+<td>钓点、日志、社区、识鱼</td>
+<td>Catchr 更突出的公开表达是收集、命名和游戏化</td>
+</tr>
+</tbody>
+</table></div>
+<p>【析，事实基础见1、3、14、15、17、18】</p>
+<h3 id="section-2-3">2.3 其核心价值可以拆成两个层次</h3>
+<p>“这是什么鱼”是进入产品的理由；“我钓过哪些、和谁一起积累了什么”才可能是长期留下的理由。</p>
+<p>这是分析判断，不是已验证的留存因果。公开资料没有 D7、D30、月活或队伍活跃率。</p>
+</section><section class="report-section"><h2 id="chapter-03">三、逐步用户路径：动机、输入输出与摩擦</h2>
+<p>下面重建的是“公开资料支持的任务链”，不是声称已经实机走完的固定页面顺序。尤其权限、注册、付费和首次扫描之间的精确顺序，可能因平台、版本和优惠变化。</p>
+<h3 id="section-3-1">3.1 发现产品</h3>
+<p>动机：看到别人钓到的真实鱼，被转换成鱼种结果、收藏或榜单，产生“我也试一下”的冲动。</p>
+<p>输入：TikTok／其他社交平台短视频，或应用商店搜索。</p>
+<p>输出：理解“现实钓鱼＋数字收集”的概念，进入商店。</p>
+<p>已证实：</p>
+<ul>
+<li>联合创始人关联账号有扫描、命名、排行榜短片。</li>
+<li>2026年10月16日北京时间，一位 iOS 评论者称通过广告发现产品。</li>
+<li>2026年10月9日 Google Play 评论者称通过 YouTube 频道找到产品。</li>
+</ul>
+<p>【创／评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a><a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a><a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a><a class="citation" href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer" title="来源 12 · 打开原始页面">[12]</a></p>
+<p>摩擦：</p>
+<ul>
+<li>视频承诺的快乐是否能在第一次打开后立即兑现？</li>
+<li>看到“免费下载”，用户可能预期至少有基础免费功能。</li>
+</ul>
+<p>未核实：渠道贡献、广告预算、点击率、获客成本，以及具体视频是否有“点击简介下载”的 CTA。</p>
+<h3 id="section-3-2">3.2 下载</h3>
+<p>动机：用自己的鱼照片复现视频结果。</p>
+<p>输入：iOS／Android 商店页面。</p>
+<p>输出：安装应用。</p>
+<p>已证实：</p>
+<ul>
+<li>iOS 免费下载、内购；要求 iOS 17.0或更新。</li>
+<li>当前 iOS 约208.6MB，英文。</li>
+<li>Android 公开存在对应包名应用。</li>
+</ul>
+<p>【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>摩擦分析：</p>
+<ul>
+<li>钓场网络条件可能不适合临时下载安装。</li>
+<li>英文界面可能限制非英语用户。</li>
+<li>“Free”与核心能力需订阅之间容易产生预期落差。</li>
+</ul>
+<p>未核实：各地区是否都能下载、安装完成率、首次启动性能。</p>
+<h3 id="section-3-3">3.3 权限、注册与资料填写</h3>
+<p>动机：建立自己的记录、允许拍照和保存渔获。</p>
+<p>输入：用户资料、登录凭据、相机／照片权限，可能涉及位置。</p>
+<p>输出：可关联个人收藏的账号。</p>
+<p>证据分层：</p>
+<ul>
+<li>【官】拍照、日志和地图功能存在；Google Play 声明可能收集位置和个人信息。<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></li>
+<li>【评】多位用户称完成资料或问答后遇到订阅墙。<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></li>
+<li>【评】2026年6月8日北京时间，一位用户报告 Apple 登录遇到“another domain”相关错误。<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></li>
+</ul>
+<p>不能确认：</p>
+<ul>
+<li>是否先注册再请求权限。</li>
+<li>问答题目、必填项和是否可以跳过。</li>
+<li>当前支持哪些登录方式。</li>
+<li>是否必须授权精确位置。</li>
+<li>拒绝相机、相册或位置权限时的实际页面。</li>
+</ul>
+<p>失败风险分析：
+登录域名／身份提供商配置、权限拒绝、资料填写中断都可能阻止首个结果。那条 Apple 登录评论只能作为故障线索，不能确定后端根因。</p>
+<h3 id="section-3-4">3.4 付费节点</h3>
+<p>动机：解锁扫描、日志、榜单及持续追踪。</p>
+<p>输入：套餐选择、商店购买。</p>
+<p>输出：订阅／其他可用权益。</p>
+<p>已证实：
+当前 iOS 描述明确写，扫描、Fish log、leaderboards、tracking 需要订阅。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></p>
+<p>用户反映：</p>
+<ul>
+<li>注册或资料填写之后才知道必须付款。</li>
+<li>点击关闭按钮后出现折扣页，而不是进入免费版。</li>
+<li>本来想邀请朋友，却因全员订阅门槛放弃。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a><a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>实际未知：</p>
+<ul>
+<li>每个版本是否都完全不可跳过。</li>
+<li>当前是否有免费扫描次数。</li>
+<li>是否按用户或地区配置试用和促销。</li>
+<li>点击关闭后具体发生什么。</li>
+<li>订阅失效后已有记录是否可只读、导出或删除。</li>
+</ul>
+<p>不能将历史“7天试用”开发者回复当成当前全用户都有的权益。</p>
+<h3 id="section-3-5">3.5 拍照／相册选择</h3>
+<p>动机：记录眼前的鱼，或补录过去的渔获。</p>
+<p>输入：现场照片或历史照片。</p>
+<p>输出：进入识别处理的照片任务。</p>
+<p>已证实：</p>
+<ul>
+<li>官方明确支持拍摄渔获照片。</li>
+<li>多条用户评论提到从相册选择过去的照片。</li>
+<li>官方截图有相机取景框与闪光灯控制图标。</li>
+</ul>
+<p>【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>主要摩擦：</p>
+<ul>
+<li>鱼体遮挡、光线不足、手持姿态、背景复杂。</li>
+<li>现场网络不稳定。</li>
+<li>如果只有一张照片，无法补充拍摄信息。</li>
+<li>过去的照片是否有可靠拍摄时间和位置。</li>
+</ul>
+<p>实际未知：
+允许几张照片、支持哪些格式、是否自动压缩、是否读取 EXIF、能否裁剪、是否支持离线暂存。</p>
+<h3 id="section-3-6">3.6 等待识别</h3>
+<p>动机：尽快获得结果，不影响放流或继续钓鱼。</p>
+<p>输入：照片及可能的辅助数据。</p>
+<p>输出：鱼种、尺寸等结果，或者失败提示。</p>
+<p>已证实：
+官方承诺“Fast fish ID”；用户多次报告停在“finalizing identification”。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>值得重视的不是单条差评，而是近期样本里同一阶段反复出现：</p>
+<ul>
+<li>上传不完成。</li>
+<li>等待很久。</li>
+<li>无法进入 Cooler。</li>
+<li>无法发布，动态也因此看不到新内容。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>未知：
+平均／P95时延、超时设置、失败重试、是否扣除次数、是否保留草稿、是否能手动绕过识别保存。</p>
+<p>【析】如果“AI成功”是日志保存的前置条件，一次识别故障就会同时摧毁记录、收藏和社交三条链路。公开评论提示存在这种风险，但未做架构验证。</p>
+<h3 id="section-3-7">3.7 查看鱼种、长度和重量</h3>
+<p>动机：理解渔获并获得比较依据。</p>
+<p>输入：识别任务结果。</p>
+<p>输出：可能的鱼种匹配、长度、重量及相关信息。</p>
+<p>已证实：
+官方描述写“likely species match, weight, and length”；Android 说明使用“estimate weight and length”。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>本轮截图发现一个容易误读的细节：</p>
+<p>官方第二张截图的大口黑鲈页面，重量显示1.0–22.0 lbs，长度显示8英寸–2英尺6英寸，旁边是“Common”“Caught: 1”和物种介绍。</p>
+<p>这更像物种资料范围，而不是一条具体鱼的精确识别结果。不能把这一张截图用作“AI测出了这条鱼长多少”的证据。【官截图／析】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></p>
+<p>实际未知：</p>
+<ul>
+<li>是否输出置信度、误差范围。</li>
+<li>是否允许多个候选鱼种。</li>
+<li>是否主动提示不能用于法规或专业竞赛。</li>
+<li>实际尺寸由何种技术获得。</li>
+</ul>
+<h3 id="section-3-8">3.8 编辑、命名、备注</h3>
+<p>动机：纠错、纪念、补充饵料和故事。</p>
+<p>输入：识别结果及人工信息。</p>
+<p>输出：具有个人意义的渔获记录。</p>
+<p>已证实：</p>
+<ul>
+<li>官方支持 bait 和 catch notes。</li>
+<li>创始人短视频索引描述明确包含给鱼命名、查看鱼种、重量和长度、添加备注。</li>
+</ul>
+<p>【官／媒】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a></p>
+<p>不能确认：</p>
+<ul>
+<li>能否改鱼种、长度、重量。</li>
+<li>修改后是否重新计分。</li>
+<li>是否保留 AI 原值和用户修改痕迹。</li>
+<li>备注是公开还是私密。</li>
+<li>同一条渔获是否能多次编辑。</li>
+</ul>
+<p>命名的产品作用分析：
+它把一条匿名记录变成“我的这次经历”，比单纯多一个字段更可能产生情感归属；但没有实验数据证明命名提高留存。</p>
+<h3 id="section-3-9">3.9 收藏、图鉴与水族馆</h3>
+<p>动机：看到持续积累的成果。</p>
+<p>输入：保存成功的渔获。</p>
+<p>输出：Gallery、Aquarium、FishBook、数量和重量统计。</p>
+<p>本轮官方截图可以确认展示了：</p>
+<ul>
+<li>Total Caught、Today、Total lbs。</li>
+<li>Gallery／Aquarium 切换。</li>
+<li>All Species 筛选和 Recent 排序。</li>
+<li>鱼种插画卡片。</li>
+<li>Your FishBook 入口。</li>
+<li>Your Personal Aquarium。</li>
+<li>一张鱼卡上的奖杯图标。</li>
+</ul>
+<p>【官截图】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></p>
+<p>仍未知：</p>
+<ul>
+<li>卡片按鱼种还是单次渔获聚合。</li>
+<li>重复捕获如何展示。</li>
+<li>水族馆是否有真实动画、容量或互动。</li>
+<li>是否能喂鱼、升级环境。</li>
+<li>奖杯对应什么规则。</li>
+</ul>
+<p>特别注意：2026年9月17日北京时间的用户评论提出“喂鱼、鱼越多水族馆越大”的建议。这个评论不能被当成现有功能证明。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<h3 id="section-3-10">3.10 排行榜与 Crew</h3>
+<p>动机：比较、竞争和维持朋友关系。</p>
+<p>输入：提交渔获、加入／创建队伍。</p>
+<p>输出：排名、他人渔获、互动。</p>
+<p>已证实：</p>
+<ul>
+<li>官方存在 leaderboards 和 friendly challenges。</li>
+<li>学校报道称 global leaderboards。</li>
+<li>第七张截图展示“Create crew”和“Maybe later”。</li>
+<li>版本记录说明榜单加入动态流，后续支持评论朋友渔获。</li>
+</ul>
+<p>【官／媒】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a></p>
+<p>用户反映：
+2026年4月23日、6月12日北京时间的评论中，有人不清楚如何邀请成员；后者称看不到邀请代码、二维码或 Crew 信息。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>关键未知：</p>
+<ul>
+<li>按最大长度、重量、总条数还是组合分计分。</li>
+<li>全球／地区／朋友／物种／赛季是否分榜。</li>
+<li>是否要求拍摄当日、现场定位或专用标识。</li>
+<li>重复提交、修改尺寸和异常渔获怎么处理。</li>
+<li>是否有举报、裁判和申诉。</li>
+</ul>
+<p>不能仅凭“ranked fishing app”认定它具备正式比赛所需的可信规则。</p>
+<h3 id="section-3-11">3.11 分享</h3>
+<p>动机：晒成果、让朋友加入、延续对话。</p>
+<p>已证实：
+应用内有社区／动态，支持评论朋友渔获；公开宣传短片可以展示产品成果。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></p>
+<p>未知：
+是否有原生分享按钮、自动生成分享卡、水印、深链、邀请奖励及归因。</p>
+<p>【析】“内容天然适合晒”与“产品已经有完整分享增长系统”是两回事。目前只确认前者的传播表现和部分应用内社交能力。</p>
+<h3 id="section-3-12">3.12 再次使用</h3>
+<p>可能的触发：</p>
+<ul>
+<li>下一次钓到鱼。</li>
+<li>钓到新鱼种。</li>
+<li>打破个人纪录。</li>
+<li>朋友上传渔获。</li>
+<li>想查看旧记录或钓点。</li>
+</ul>
+<p>【析，基础见1、3】</p>
+<p>真实留存未知：
+通知机制、连续签到、每周挑战、召回策略、D7／D30、付费续订率均未公开。</p>
+<p>空状态也未实测：没有渔获、没有附近用户、空 Crew、榜单无成绩时实际显示什么，目前不能描述成已知界面。</p>
+</section><section class="report-section"><h2 id="chapter-04">四、功能清单与信息架构</h2>
+<h3 id="section-4-1">4.1 已有公开证据的能力</h3>
+<div aria-label="数据表格 3，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>证据支持的功能</th>
+<th>尚不能确认</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>识别</td>
+<td>拍照识鱼、可能鱼种匹配、长度重量估计</td>
+<td>模型、精度、候选数、纠错方式</td>
+</tr>
+<tr>
+<td>记录</td>
+<td>饵料、备注、个人最佳、统计</td>
+<td>手工独立录入、导出、批量导入</td>
+</tr>
+<tr>
+<td>收藏</td>
+<td>Gallery、Aquarium、FishBook、鱼种卡片</td>
+<td>完整解锁规则、喂养、成长系统</td>
+</tr>
+<tr>
+<td>社区</td>
+<td>动态流、渔获展示、评论</td>
+<td>私信、屏蔽、关注关系完整规则</td>
+</tr>
+<tr>
+<td>竞争</td>
+<td>排行榜、友好挑战、Crew创建</td>
+<td>分榜、计分、赛季及反作弊规则</td>
+</tr>
+<tr>
+<td>钓点</td>
+<td>地图、Nearby Fishing Spots</td>
+<td>数据来源、推荐算法、位置隐私默认值</td>
+</tr>
+<tr>
+<td>商业化</td>
+<td>订阅解锁核心功能、恢复购买入口</td>
+<td>当前全部套餐、退款及退订后访问规则</td>
+</tr>
+</tbody>
+</table></div>
+<p>【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<h3 id="section-4-2">4.2 信息架构不能照截图强拼成一棵确定导航树</h3>
+<p>截图中至少出现两种底部导航表达：</p>
+<ul>
+<li>收藏相关截图：Home／Scan／Cooler。</li>
+<li>地图截图：Home／Map／Create及相机入口。</li>
+</ul>
+<p>这可能来自不同版本、不同状态或营销素材更新不同步。不能将它们组合成“当前应用固定有五个底部标签”。</p>
+<p>更可靠的结论是：产品有“发现／社区”“拍摄”“个人收藏”“钓点”“朋友竞争”这些信息域；当前实机导航仍需观看或安装验证。</p>
+<h3 id="section-4-3">4.3 游戏化的准确边界</h3>
+<p>已看到的游戏化元素：</p>
+<ul>
+<li>鱼种插画而不只是照片列表。</li>
+<li>Common 标签。</li>
+<li>捕获次数。</li>
+<li>FishBook。</li>
+<li>Aquarium。</li>
+<li>奖杯图标。</li>
+<li>榜单和朋友队伍。</li>
+</ul>
+<p>未证实的元素：</p>
+<ul>
+<li>完整成就系统。</li>
+<li>XP等级、每日任务、连续签到。</li>
+<li>喂鱼养成。</li>
+<li>稀有度的科学定义和概率。</li>
+<li>水族馆经济系统。</li>
+</ul>
+<p>Android 介绍提到“small to legendary”，但这不能证明有一整套已验证的稀有度或养成规则。【官】<a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+</section><section class="report-section"><h2 id="chapter-05">五、AI的实际作用、技术边界与排名可信度</h2>
+<h3 id="section-5-1">5.1 AI在产品里的作用</h3>
+<p>【析】AI至少承担三个产品角色：</p>
+<ol>
+<li>减少录入：从一张照片开始，而不是让新手填完整表格。</li>
+<li>制造即时结果：让普通照片变成有结构、有反馈的内容。</li>
+<li>连接后续系统：鱼种／尺寸进入统计、收藏和比较。</li>
+</ol>
+<p>但收藏、水族馆、队伍、动态和榜单本身不一定需要生成式 AI。</p>
+<p>目前没有证据证明 Catchr 具备文本创作、AI生成图片或AI生成视频能力。它主要是视觉识别／估计和游戏化组织，不应被描述成多模态内容生成产品。</p>
+<h3 id="section-5-2">5.2 识鱼和测鱼是不同难题</h3>
+<h4 id="heading-43">鱼种识别</h4>
+<p>可以从形态、鳍、颜色、花纹等视觉信息估计物种。</p>
+<p>影响结果的因素包括：</p>
+<ul>
+<li>相近物种、幼鱼与成鱼差异。</li>
+<li>光照、反光、鱼体遮挡。</li>
+<li>同一物种的地域／季节变化。</li>
+<li>淡水与海水覆盖范围。</li>
+</ul>
+<p>官方 Android 文案仍强调淡水鱼，而 iOS 宣传截图出现多种鱼类，覆盖边界没有完整公开清单。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>没有公开测试集、混淆矩阵或误识率，不能替它报准确率。截图中的“Most Accurate”是营销宣称，不是独立排名。</p>
+<h4 id="heading-44">长度估计</h4>
+<p>【析：一般计算机视觉原理，不是对 Catchr 实现的断言】</p>
+<p>单张普通照片如果没有已知尺度、相机距离、深度或可靠参照，无法仅凭鱼占多少像素唯一还原真实长度。</p>
+<p>可能影响尺度的因素：</p>
+<ul>
+<li>人把鱼向镜头前伸。</li>
+<li>广角透视。</li>
+<li>鱼和参照物不在同一平面。</li>
+<li>鱼弯曲、尾巴姿态、遮挡。</li>
+<li>图片裁剪和缩放。</li>
+</ul>
+<p>模型可以依据鱼种和外观猜一个合理范围，但“统计上看起来合理”不等于“实际量过”。</p>
+<h4 id="heading-45">重量估计</h4>
+<p>【析】若通过鱼种、长度和体型关系推算重量，还会受到体况、腹部饱满度、性别和季节差异影响。长度误差也可能进一步放大重量误差。</p>
+<p>Catchr 没有公开具体方法，不能认定它一定使用长度—重量公式，也不能认定它调用某个大模型。</p>
+<h3 id="section-5-3">5.3 实际技术栈未知</h3>
+<p>尚未核实：</p>
+<ul>
+<li>自研模型或第三方 API。</li>
+<li>云端还是端侧推理。</li>
+<li>是否使用位置辅助识别。</li>
+<li>是否检测图片真实性。</li>
+<li>是否读取 EXIF。</li>
+<li>是否利用深度、AR或多帧。</li>
+<li>是否有人工审核。</li>
+</ul>
+<p>用户的“finalizing identification”反馈说明某个处理环节存在失败体验，但不能定位是模型、上传、数据库、审核、鉴权还是客户端问题。</p>
+<h3 id="section-5-4">5.4 估计结果进入排行榜，会产生额外可信度问题</h3>
+<p>【析】可能的作弊方式包括：</p>
+<ul>
+<li>从网上下载大鱼照片。</li>
+<li>同一条鱼重复提交。</li>
+<li>上传 AI 生成鱼图。</li>
+<li>改时间、地点或尺寸。</li>
+<li>多人提交同一渔获。</li>
+<li>用透视夸大鱼体。</li>
+<li>修改识别结果后参与排名。</li>
+</ul>
+<p>当前没有公开证据证明 Catchr 已经防住这些情况。</p>
+<p>因此更合适的定位是：目前可验证它有“友好竞争”，不能验证它拥有“认证纪录／公平奖金比赛”的可信基础。</p>
+<p>【析】如果用于正式比赛，至少需要区分：</p>
+<ul>
+<li>AI估计；</li>
+<li>用户自报；</li>
+<li>有标尺照片；</li>
+<li>实际称重；</li>
+<li>裁判认证。</li>
+</ul>
+<p>这些是可能的改进方向，不是 Catchr 已有标签。</p>
+</section><section class="report-section"><h2 id="chapter-06">六、增长渠道、短视频内容与历史热度</h2>
+<h3 id="section-6-1">6.1 最强传播点：用熟悉的游戏语言解释现实行为</h3>
+<p>“现实版 Pokémon”“Animal Crossing for fishing”不是技术介绍，而是把识鱼、记录和收藏转成容易理解的欲望。</p>
+<p>【析】它让观众在十几秒内理解：
+“我现实里做的事，也能变成一个持续积累的游戏。”</p>
+<p>这比讲模型准确率、日志字段和后台架构更适合短视频。</p>
+<h3 id="section-6-2">6.2 三条具体内容证据</h3>
+<div aria-label="数据表格 4，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>日期、作者</th>
+<th>可确认的内容</th>
+<th>数据口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蓝鳃太阳鱼扫描短片；原文案“my first bluegill of the yr too #fishtok”</td>
+<td>@brock.fishes5，2025-04-17北京时间</td>
+<td>第三方索引描述夜间扫描识别幼鱼</td>
+<td>DarkUGC记录约430万播放；非当前平台实时值。<a class="citation" href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer" title="来源 12 · 打开原始页面">[12]</a></td>
+</tr>
+<tr>
+<td>“POV: I tried to make a ranked fishing app”；原文案“tried my best #fishtok”</td>
+<td>同账号，2025-05-21北京时间</td>
+<td>第三方索引描述榜单录屏及趣味内容</td>
+<td>索引记录约985万播放；采集时点未明确。<a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a></td>
+</tr>
+<tr>
+<td>“POV: you save and name every fish you catch”；原文案“it takes time but worth it for the memories #fishtok”</td>
+<td>同账号，2025-05-23北京时间</td>
+<td>索引描述记录、命名、重量、长度、鱼种和备注</td>
+<td>索引记录约886万播放；不是经审计去重触达。<a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>视频标题中的 POV 句子是索引记录的画面钩子／标题，不一定等同原视频发布文案。</p>
+<p>三个原视频页本轮均通过公开读取返回 HTTP 200，并核对作者、文案与发布时间；没有观看画面。</p>
+<h3 id="section-6-3">6.3 CTA能说到什么程度</h3>
+<p>已确认：</p>
+<ul>
+<li>文案包含 #fishtok。</li>
+<li>内容围绕真实钓获和应用结果。</li>
+<li>页面描述呈现“扫描／收集／排名”的使用诱因。</li>
+</ul>
+<p>未确认：</p>
+<ul>
+<li>视频是否直接口播“下载 Catchr”。</li>
+<li>有没有商店按钮、简介链接或置顶评论 CTA。</li>
+<li>每条内容带来多少下载、付费和续订。</li>
+</ul>
+<p>【析】这些内容的隐性 CTA 是“我也想用自己的鱼得到这个结果”；但不能把这个分析当成已测转化漏斗。</p>
+<h3 id="section-6-4">6.4 第三方营销文章的数字</h3>
+<p>Playkit 的 Nick Sanchez 于2025年7月22日发表文章，声称：</p>
+<ul>
+<li>71条视频累计5500万以上播放；</li>
+<li>90天约6.5万下载；</li>
+<li>$500K ARR；</li>
+<li>增长来自自然 TikTok 内容。</li>
+</ul>
+<p>【媒：营销案例文章】<a class="citation" href="https://playkit.beehiiv.com/p/fish-id-app" rel="noopener noreferrer" title="来源 9 · 打开原始页面">[9]</a></p>
+<p>使用限制：</p>
+<ul>
+<li>没有公开收入仪表盘或审计证明。</li>
+<li>“全部来自自然流量”的归因不可独立验证。</li>
+<li>文章销售增长工具和内容，具有营销语境。</li>
+<li>不能把文章数字当成当前经营数据。</li>
+</ul>
+<h3 id="section-6-5">6.5 历史热门和当前热门必须分开</h3>
+<p>历史证据：
+学校报道的榜单峰值、创始人出售公告及2025年具体爆款短片，足以支持“曾取得明显传播和下载成绩”。<a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a><a class="citation" href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer" title="来源 7 · 打开原始页面">[7]</a><a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a><a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a></p>
+<p>当前能确认：
+2026年仍有用户评论称通过社交内容、广告或 YouTube 发现它。<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>当前不能确认：
+2026年11月仍在爆发增长、当前排行榜位置、当前日下载、活跃创作者数量。</p>
+<p>公开 X 检索本轮未补到有用原帖；不能据此断言没有 X 传播。</p>
+</section><section class="report-section"><h2 id="chapter-07">七、定价、免费边界、收入与下载</h2>
+<h3 id="section-7-1">7.1 免费下载不等于有免费核心功能</h3>
+<p>当前官方 iOS 描述明确：扫描、日志、榜单、追踪需要订阅。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></p>
+<p>近期用户评论与这个边界基本一致：有人无法绕过订阅墙，也有人希望只免费记录。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>未证实当前有：</p>
+<ul>
+<li>每天／每月免费扫描额度。</li>
+<li>永久免费的日志层。</li>
+<li>所有人一致的免费试用。</li>
+<li>免费进入社区或只读收藏的权限。</li>
+</ul>
+<h3 id="section-7-2">7.2 可见价格分三层理解</h3>
+<h4 id="heading-57">A. 当前美国区商店列出的内购 SKU</h4>
+<p>包括 Catchr Pro 的 US$0.99、2.99、4.99、9.99、12.99、19.99、29.99等价格，以及 Fishdexx Plus US$0.99。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></p>
+<p>这只证明商店列有这些商品价格。</p>
+<p>不能仅凭名称对应为周／月／年／终身，也不能认为所有商品当前同时对新用户开放。</p>
+<h4 id="heading-58">B. 第三方付费墙截图</h4>
+<p>PaywallScreens 的具体页面关联 App ID 6744193660，页面标注2026年10月26日，并保留版本1.6.1信息。截图本轮已实际读取。【媒：截图档案】<a class="citation" href="https://www.paywallscreens.com/apps/catchr-digital-livewell-mobile-paywall-6604" rel="noopener noreferrer" title="来源 13 · 打开原始页面">[13]</a></p>
+<p>截图可见：</p>
+<ul>
+<li>Annual：$29.99／year，折算$2.50／mo。</li>
+<li>Monthly plan：$9.99／month。</li>
+<li>年付项带“Save 70%”。</li>
+<li>年付划线价$59.99。</li>
+<li>顶部关闭按钮。</li>
+<li>Continue。</li>
+<li>Privacy、Restore Purchase、Terms。</li>
+<li>4.7 Stars及170K+ Users宣传。</li>
+</ul>
+<p>边界：</p>
+<ul>
+<li>截图没有明确地区和币种代码，只显示“$”。</li>
+<li>页面日期不等于已核实的截图实际采集日期。</li>
+<li>页面同时保留较老版本号，不能保证这是当前所有用户看到的价格。</li>
+<li>$2.50／mo是年付折算，不是月付扣款金额。</li>
+<li>170K+ Users是营销文案，不等于付费用户，也不等于月活。</li>
+</ul>
+<h4 id="heading-59">C. 历史开发者回复和用户报告</h4>
+<ul>
+<li>2025年6月22日，开发者回复称提供7天免费试用。【官：历史回复】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a></li>
+<li>2025年9月30日，开发者称增加过一次性付款方式，等待推出免费版。【官：历史回复】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a></li>
+<li>2026年3月29日北京时间，一位1.8.1用户称支付$19.99年费，且当时没有试用。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></li>
+</ul>
+<p>这些证据说明不同时间或优惠路径可能不同，不能整理成一个确定、统一的现行套餐表。</p>
+<h3 id="section-7-3">7.3 收入：本轮找到的一手披露</h3>
+<p>Brock Anderson 于2026年3月24日08:29，北京时间，在招聘原帖中写：</p>
+<p>“Catchr does $15k/mo passively right now.”</p>
+<p>【创】<a class="citation" href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer" title="来源 8 · 打开原始页面">[8]</a></p>
+<p>正确读法：</p>
+<ul>
+<li>产品：Catchr。</li>
+<li>时点：2026年3月。</li>
+<li>数字：每月$15,000。</li>
+<li>币种：原文仅写“$”，未明确 ISO 币种。</li>
+<li>口径：未说明流水、净收入、平台抽成前后、是否含退款和税。</li>
+<li>未明确称 MRR。</li>
+<li>没有利润、成本、订阅人数或审计证明。</li>
+</ul>
+<p>不能做的推导：</p>
+<ul>
+<li>不应直接当成当前月营收。</li>
+<li>不应乘12称“已实现年收入$180K”。</li>
+<li>不应将 passively 翻译成“完全零维护”。</li>
+<li>不应当作其他同类项目能达到的目标。</li>
+</ul>
+<h3 id="section-7-4">7.4 其他财务数字为何不宜混用</h3>
+<div aria-label="数据表格 5，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>数字</th>
+<th>来源</th>
+<th>可信边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$500K ARR</td>
+<td>2025-07-22 Playkit文章</td>
+<td>第三方营销文章声称，未见原始仪表盘。<a class="citation" href="https://playkit.beehiiv.com/p/fish-id-app" rel="noopener noreferrer" title="来源 9 · 打开原始页面">[9]</a></td>
+</tr>
+<tr>
+<td>$15K／月</td>
+<td>2026-03-24 Brock原帖</td>
+<td>一手自述，但具体会计口径未知。<a class="citation" href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer" title="来源 8 · 打开原始页面">[8]</a></td>
+</tr>
+<tr>
+<td>PaywallScreens月收入估算</td>
+<td>第三方页面</td>
+<td>搜索摘要与实开页数值不一致，方法不透明，不作为经营事实。<a class="citation" href="https://www.paywallscreens.com/apps/catchr-digital-livewell-mobile-paywall-6604" rel="noopener noreferrer" title="来源 13 · 打开原始页面">[13]</a></td>
+</tr>
+<tr>
+<td>Peekly估算</td>
+<td>第三方页面</td>
+<td>同一页面出现相互冲突的收入、下载、评分及“无内购”文字，与官方不一致，排除其数字。<a class="citation" href="https://peekly.app/apps/01ceec0c-fb3f-4dfb-95e5-9fbc98be4765" rel="noopener noreferrer" title="来源 24 · 打开原始页面">[24]</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>不能把不同时间、不同来源和不同口径拼成“先增长后衰退”的收入曲线。</p>
+<h3 id="section-7-5">7.5 下载和用户规模</h3>
+<ul>
+<li>学校2026年1月5日报道：历史累计近20万下载、170多个国家。【媒】<a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a></li>
+<li>Matt出售公告：数十万下载、170个国家。【创】<a class="citation" href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer" title="来源 7 · 打开原始页面">[7]</a></li>
+<li>Google Play检索日显示5K+下载，仅对应该 Android 商店条目。【官】<a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></li>
+<li>美国区 iOS 官方 Lookup 显示5040条评分，约4.66，商店四舍五入为4.7。【官】<a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a></li>
+</ul>
+<p>评分人数不是下载人数；累计下载不是活跃用户；170国覆盖不是170国都有有效社区。</p>
+<p>没有找到可核实的当前付费用户数、续订率、净利润或收购金额。</p>
+</section><section class="report-section"><h2 id="chapter-08">八、用户评论：近期样本带来的重要修正</h2>
+<h3 id="section-8-1">8.1 样本与局限</h3>
+<p>本轮读取 Apple 官方美国区最近50条文字评论，日期覆盖2026年3月29日至11月3日，北京时间。【官载体／评内容】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>样本分布：</p>
+<ul>
+<li>1星29条；</li>
+<li>2星1条；</li>
+<li>3星1条；</li>
+<li>4星6条；</li>
+<li>5星13条。</li>
+<li>47条标记版本1.8.2，3条为1.8.1。</li>
+</ul>
+<p>这不是全量评分分布，也不是随机用户抽样。主动写文字评论的人可能更不满意；另一方面，部分5星评论非常短，无法判断其使用深度。</p>
+<p>所以不能用“29／50是一星”推导全部用户58%不满意，也不能用累计4.7分否定近期故障反馈。</p>
+<h3 id="section-8-2">8.2 主题一：用户喜欢概念，但反感最后才出现的付费墙</h3>
+<p>典型证据：</p>
+<ul>
+<li>2026年11月3日，《Subscription service》：本来准备使用并告诉朋友，看到强制订阅后删除。</li>
+<li>2026年10月16日，《Force pay》：广告吸引下载，填写问答后才要求订阅。</li>
+<li>2026年6月5日，《misleading》：完成资料设置后才知道必须付费。</li>
+<li>2026年4月10日，《Paywalls are dumb》：熟悉鱼种，不需要 AI，想免费记录多年渔获。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>分析：
+这不只是“用户不愿花钱”。部分人明确区分 AI识别价值与基础日志价值；全功能一起上锁，可能同时压制记录习惯和朋友邀请。</p>
+<h3 id="section-8-3">8.3 主题二：识别／上传失败影响核心闭环</h3>
+<ul>
+<li>2026年5月4日，Redneck713：付费后，相册照片卡在“finalizing identification”。</li>
+<li>2026年5月8日，有用户称照片授权已给全，仍长时间无法上传。</li>
+<li>2026年6月12日，4星用户喜欢产品，但历史照片卡住。</li>
+<li>2026年6月18日，多条评论报告无法上传或长时间没有新动态。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>分析：
+这些评论跨越多周，不宜当成同一天的偶发网络问题；但仍不能据此给出故障率或确定同一根因。</p>
+<p>特别值得注意：4星、5星用户也会报告功能故障，星级与实际文字内容并不总一致。</p>
+<h3 id="section-8-4">8.4 主题三：记录越多，可靠性风险可能越重要</h3>
+<p>2026年11月3日，Sharkweiss 的《App crashes every time I try to open it》称已记录250多条渔获，开始很好，后来越来越卡，最终打开和记录都会冻结或崩溃。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>这是一条单用户自述，不足以证明普遍性能问题。</p>
+<p>但它提醒我们：这类产品的资产价值来自长期记录，数据规模增大后的可靠性比一次漂亮演示更重要。</p>
+<h3 id="section-8-5">8.5 主题四：Crew承诺与邀请体验存在落差</h3>
+<ul>
+<li>2026年4月23日，5星评论问如何添加 Crew 成员。</li>
+<li>2026年6月12日，4星评论称找不到代码、推荐链接或二维码，也看不到队伍名称、人数。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>分析：
+产品已经在宣传“朋友竞争”，但用户进入这个社交单元的路径可能不清楚，甚至可能存在功能故障。当前不能确定是哪一种。</p>
+<h3 id="section-8-6">8.6 主题五：本地网络密度不足</h3>
+<p>2026年6月19日，《I want to like it》称100英里内没人使用，认为购买年费没有意义。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>这只代表一个人的地区体验。</p>
+<p>分析：
+全球下载量很容易掩盖本地社区稀疏。对这种产品，“有20万下载”不代表“我的朋友和附近钓友都在”。</p>
+<h3 id="section-8-7">8.7 主题六：支持和服务持续性成为信任问题</h3>
+<p>2026年7月13日，Mikepacheco 称支持入口不工作、联系无回应，并转述 Discord 管理员的说法；8月31日也有用户抱怨联系不到支持。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<p>这里必须区分：</p>
+<ul>
+<li>可以确认有人报告无响应；</li>
+<li>不能据此证实开发者已放弃、公司已停止运营；</li>
+<li>“scam”等词是用户情绪表达，不是本报告认定。</li>
+</ul>
+<h3 id="section-8-8">8.8 正向价值同样存在</h3>
+<ul>
+<li>2026年8月4日：喜欢像 Pokémon 一样收集鱼，并认为钓点有用。</li>
+<li>2026年9月12日：新手认为提示、地点、目标能鼓励自己进步。</li>
+<li>2026年9月21日：用户称一直想要这样的产品，自己经常钓鱼。</li>
+<li>Google Play 2026年5月22日评论认为适合新手追踪渔获。</li>
+</ul>
+<p>【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>较稳妥的总结是：</p>
+<p>需求和概念有真实共鸣，但“愿意尝试／喜欢想法”与“持续稳定付费使用”之间存在明显交付风险。</p>
+</section><section class="report-section"><h2 id="chapter-09">九、四个相邻产品的逐项比较</h2>
+<p>这里选的不是四个“识鱼壳”，而是分别代表成熟钓鱼社区、综合工具、标准化测量比赛和手机现场测量比赛。</p>
+<p>所有功能均为官网自述，未独立验证精度。</p>
+<div aria-label="数据表格 6，可横向滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>Catchr</th>
+<th>Fishbrain</th>
+<th>FishAngler</th>
+<th>ALB Achiever</th>
+<th>Fish Masters Live</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>核心定位</td>
+<td>识鱼＋收藏＋朋友比较</td>
+<td>钓点情报、日志、社区</td>
+<td>地图、天气、日志、社区</td>
+<td>标准化测量与比赛</td>
+<td>每周手机钓鱼比赛</td>
+</tr>
+<tr>
+<td>照片识鱼</td>
+<td>官方确认</td>
+<td>官方确认</td>
+<td>Fishial.ai合作识别</td>
+<td>官方确认</td>
+<td>官方称端侧识别</td>
+</tr>
+<tr>
+<td>长度来源</td>
+<td>官方称估计；方法未知</td>
+<td>官方帮助要求填写长度重量</td>
+<td>本轮未确认照片自动估长</td>
+<td>专用PhotoMeasure板＋拍照</td>
+<td>官网称场景测量，LiDAR／ARKit路径最精确</td>
+</tr>
+<tr>
+<td>专用板要求</td>
+<td>未见公开要求；不等于已证明无参照精准测量</td>
+<td>没有声称照片自动测量</td>
+<td>未确认</td>
+<td>明确需要其专用板</td>
+<td>官网称不必专用板，要求平面拍摄</td>
+</tr>
+<tr>
+<td>日志与社区</td>
+<td>有</td>
+<td>强调日志和位置隐私</td>
+<td>强调45项以上渔获属性及群组</td>
+<td>有记录、区域榜和比赛</td>
+<td>有比赛记录、赛季及成就</td>
+</tr>
+<tr>
+<td>收藏表达</td>
+<td>FishBook、水族馆、插画鱼卡</td>
+<td>更偏日志和数据</td>
+<td>更偏工具与社区</td>
+<td>更偏成绩与认证</td>
+<td>XP、徽章、赛季</td>
+</tr>
+<tr>
+<td>主要门槛</td>
+<td>核心功能订阅</td>
+<td>免费层＋Pro</td>
+<td>免费能力＋VIP</td>
+<td>订阅及测量板</td>
+<td>官网称免费参赛，部分高级能力订阅</td>
+</tr>
+<tr>
+<td>反作弊公开程度</td>
+<td>未找到具体规则</td>
+<td>本轮未研究其比赛认证规则</td>
+<td>本轮未确认</td>
+<td>标准板和统一测量流程</td>
+<td>官网明确提到重复警告、公开提交、举报和人工调整</td>
+</tr>
+</tbody>
+</table></div>
+<p>来源：【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://fishbrain.com/" rel="noopener noreferrer" title="来源 14 · 打开原始页面">[14]</a>—<a class="citation" href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/92/0b/22920b93-3fe6-9c4e-d763-ce3e76cf0247/7.jpg/600x1300bb.jpg" rel="noopener noreferrer" title="来源 22 · 打开原始页面">[22]</a></p>
+<h3 id="section-9-1">9.1 Fishbrain：真实的长期替代品</h3>
+<p>官方支持文档详细要求：</p>
+<ul>
+<li>上传照片。</li>
+<li>调整地点。</li>
+<li>选择位置隐私等级。</li>
+<li>选择／纠正鱼种。</li>
+<li>填写重量和长度。</li>
+<li>标注是否放流。</li>
+<li>添加饵料、装备和时间。</li>
+</ul>
+<p>因此，它的“AI识鱼”不能被理解成“照片自动测长”。【官】<a class="citation" href="https://support.fishbrain.com/hc/en-us/articles/22539021061020-How-do-I-log-a-catch-iOS" rel="noopener noreferrer" title="来源 15 · 打开原始页面">[15]</a></p>
+<p>它公开提供精确位置、只显示水域、隐藏位置三级隐私；Pro侧重钓点、地图、推荐和私有航点。<a class="citation" href="https://fishbrain.com/" rel="noopener noreferrer" title="来源 14 · 打开原始页面">[14]</a><a class="citation" href="https://fishbrain.com/pro" rel="noopener noreferrer" title="来源 16 · 打开原始页面">[16]</a></p>
+<p>对 Catchr 的竞争含义：
+如果用户只想要日志、钓点和钓友社区，Catchr面对的是已有数据密度和较完整工具链的竞争者。其差异化更可能是轻快收藏体验，而非功能数量。</p>
+<h3 id="section-9-2">9.2 FishAngler：识鱼功能本身并非新壁垒</h3>
+<p>2022年5月18日官方文章已宣布与 Fishial.ai 合作照片识鱼，并提供特征筛选和物种比较。【官】<a class="citation" href="https://blog.fishangler.com/fishangler-introduces-fishial-ai-species-recognition/" rel="noopener noreferrer" title="来源 18 · 打开原始页面">[18]</a></p>
+<p>当前官网强调：</p>
+<ul>
+<li>地图、预测和实时环境数据。</li>
+<li>45项以上渔获属性。</li>
+<li>社交、群组和分享。</li>
+<li>VIP额外提供精确渔获位置、高级地图和私有航点。</li>
+</ul>
+<p>【官】<a class="citation" href="https://www.fishangler.com/" rel="noopener noreferrer" title="来源 17 · 打开原始页面">[17]</a><a class="citation" href="https://www.fishangler.com/vip" rel="noopener noreferrer" title="来源 19 · 打开原始页面">[19]</a></p>
+<p>它说明：Catchr不能仅凭“接入识鱼”形成强护城河。真正不同的是识别后的反馈设计和传播语言。</p>
+<p>官网首页的“全部免费”表达与VIP页面并存，因此也不能把FishAngler描述为全部高级功能永久免费。</p>
+<h3 id="section-9-3">9.3 ALB：把测量可信度放在前面</h3>
+<p>ALB明确要求手机、软件与专用 PhotoMeasure 测量板共同使用，强调统一测量和实时排名。【官】<a class="citation" href="https://www.anglersleaderboard.com/" rel="noopener noreferrer" title="来源 20 · 打开原始页面">[20]</a></p>
+<p>优势分析：
+有已知几何参照，比分辨任意照片中的绝对尺度更容易建立可信度。</p>
+<p>代价分析：
+需要购买、携带并正确使用硬件，使用门槛高于随手拍。</p>
+<p>不能把 ALB 的测量能力移植成“Catchr也能做到一样准确”，二者输入条件不同。</p>
+<h3 id="section-9-4">9.4 Fish Masters Live：更直接解决手机比赛可信度</h3>
+<p>官网自述：</p>
+<ul>
+<li>鱼放在平面上，手机向下拍。</li>
+<li>支持LiDAR的iPhone通过ARKit检测平面。</li>
+<li>用户可调整测量框。</li>
+<li>鱼种在设备端识别。</li>
+<li>有重复渔获警告、公开提交、举报及管理员复核。</li>
+<li>每周比赛、赛季、XP和成就。</li>
+</ul>
+<p>【官】<a class="citation" href="https://fishmasterslive.com/" rel="noopener noreferrer" title="来源 21 · 打开原始页面">[21]</a></p>
+<p>边界：
+官网也称普通支持设备可以测量，但没有公开独立误差评估；不能将其宣称当成实验室验证结果。</p>
+<p>对 Catchr 的含义：
+如果继续强化“比大小”，就会被要求解释测量和作弊；如果只做轻松收集，则应该避免给用户“认证比赛”的暗示。</p>
+</section><section class="report-section"><h2 id="chapter-10">十、审核、隐私、位置、动物福利及运维成本</h2>
+<h3 id="section-10-1">10.1 隐私和条款：本轮必须保留的缺口</h3>
+<p>商店指向：</p>
+<ul>
+<li><a href="https://getcatchr.com/privacy" rel="noopener noreferrer">https://getcatchr.com/privacy</a></li>
+<li><a href="https://getcatchr.com/terms" rel="noopener noreferrer">https://getcatchr.com/terms</a></li>
+</ul>
+<p>本轮公开网页读取返回500错误；公开备用读取也未成功建立连接。只能说明此次读取失败，不能断言网站对所有用户永久失效。<a class="citation" href="https://getcatchr.com/privacy" rel="noopener noreferrer" title="来源 25 · 打开原始页面">[25]</a></p>
+<p>因此没有核实：</p>
+<ul>
+<li>法律合同主体。</li>
+<li>个人数据控制者及联系方式。</li>
+<li>图片、备注和位置的保存期限。</li>
+<li>是否将照片用于训练。</li>
+<li>分包模型／云服务商。</li>
+<li>跨境传输安排。</li>
+<li>删除、导出及账号注销流程。</li>
+<li>适用法律、责任限制及争议条款。</li>
+</ul>
+<p>不应把商店的简短隐私标签当成完整隐私政策。</p>
+<h3 id="section-10-2">10.2 两个平台的数据声明不宜直接合并</h3>
+<p>iOS 商店声明：</p>
+<ul>
+<li>Usage Data可能用于跨应用／网站追踪。</li>
+<li>广告相关使用数据可能关联身份。</li>
+<li>产品交互、崩溃数据等可能不关联身份。</li>
+</ul>
+<p>【官：开发者向Apple申报】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a></p>
+<p>Google Play声明：</p>
+<ul>
+<li>可能收集位置、个人信息及其他类别。</li>
+<li>可能分享设备或其他标识符。</li>
+<li>传输中加密。</li>
+</ul>
+<p>【官：开发者申报】<a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>两者差异可能来自平台、版本或申报方式，不能直接认定某平台违规，也不能因此说照片和位置不会被处理。</p>
+<h3 id="section-10-3">10.3 地点是钓鱼产品的核心资产，也是核心风险</h3>
+<p>【析】
+一张渔获照片可能包含：</p>
+<ul>
+<li>私人钓点。</li>
+<li>人脸、车牌、儿童。</li>
+<li>住宅或码头背景。</li>
+<li>EXIF经纬度与拍摄时间。</li>
+<li>保护物种或敏感栖息地信息。</li>
+</ul>
+<p>如果产品新增钓点推荐，却没有清晰的默认隐私和发布确认，用户可能在不知情下暴露地点。</p>
+<p>Catchr目前的：</p>
+<ul>
+<li>EXIF处理方式；</li>
+<li>精确位置默认公开与否；</li>
+<li>是否能只显示水域；</li>
+<li>位置删除和编辑；</li>
+</ul>
+<p>均未核实，不能套用Fishbrain的三级隐私设计。</p>
+<h3 id="section-10-4">10.4 UGC审核与社区治理</h3>
+<p>【析】
+有照片、名称、备注、动态和评论，就可能遇到：</p>
+<ul>
+<li>不当图片和骚扰言论。</li>
+<li>盗图与版权投诉。</li>
+<li>虚假渔获。</li>
+<li>濒危／保护物种内容。</li>
+<li>暴露他人身份或位置。</li>
+<li>未成年人互动。</li>
+</ul>
+<p>本轮未核实 Catchr 的举报、屏蔽、审核人员和处理时效。商店有UGC／聊天等年龄评级信息，不等于这些治理机制已充分有效。</p>
+<h3 id="section-10-5">10.5 环保与动物福利</h3>
+<p>官方要求用户查阅当地法规后再决定保留渔获，这是必要但有限的提示。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>【析】潜在负面激励：</p>
+<ul>
+<li>为了拍得好看延长鱼离水时间。</li>
+<li>为榜单反复摆拍、重复抓持。</li>
+<li>为解锁图鉴追逐敏感物种。</li>
+<li>只鼓励大鱼、数量和稀有度。</li>
+</ul>
+<p>但不能因此认定Catchr已经导致这些行为；目前没有相关实证。</p>
+<p>更安全的设计方向是：
+先放流、后补录；避免把等待识别变成必须持鱼等待；不把AI结果用作法规许可；在任务和榜单中排除明显不当激励。</p>
+<p>这些都是分析建议，不是现有功能。</p>
+<h3 id="section-10-6">10.6 运维成本不是只有一次模型调用</h3>
+<p>【析】持续成本至少包括：</p>
+<ol>
+<li>图片上传、压缩、存储、CDN和删除。</li>
+<li>识别调用、失败重试、超时及供应商故障。</li>
+<li>数据库和大量历史渔获的查询性能。</li>
+<li>登录、商店收据、订阅恢复与权益校验。</li>
+<li>动态流、评论、队伍和排行榜。</li>
+<li>地图服务、位置数据和数据供应授权。</li>
+<li>内容审核、作弊投诉与隐私请求。</li>
+<li>客服、退款争议和应用商店维护。</li>
+</ol>
+<p>没有调用量、单次成本、存储策略和人员投入数据，无法给 Catchr 毛利或维护预算。</p>
+<p>创始人说“passively”只能理解为其经营描述，不能据此说成本趋近于零。</p>
+<h3 id="section-10-7">10.7 商业弱点</h3>
+<p>【析，结合前述证据】</p>
+<ul>
+<li>使用频率受天气、季节和钓鱼频率限制，难要求每天回来。</li>
+<li>AI识鱼对熟手边际价值可能较低。</li>
+<li>全员订阅可能阻断朋友组队。</li>
+<li>全球规模未必产生本地密度。</li>
+<li>AI故障可能同时阻断日志、收藏和社区。</li>
+<li>基于估计的排名容易遭遇真实性争议。</li>
+<li>累积越多的私人记录，越需要稳定性、备份和导出。</li>
+<li>成熟竞品在地图、法规和社区数据上已有明显积累。</li>
+</ul>
+</section><section class="report-section"><h2 id="chapter-11">十一、证据支撑的优点、缺点、机会与风险</h2>
+<h3 id="section-11-1">11.1 优点</h3>
+<h4 id="heading-87">一句话能讲清楚，短视频容易演示</h4>
+<p>证据：具体扫描、命名和排行榜短片；历史百万级传播记录。【创／媒】<a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a><a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a><a class="citation" href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer" title="来源 12 · 打开原始页面">[12]</a></p>
+<p>评价：产品结果本身就是内容，不需要长篇解释。</p>
+<h4 id="heading-88">AI与现实行为结合，而非独立聊天</h4>
+<p>证据：官方照片→识别→保存→榜单流程。【官】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<p>评价：输入不是一个空白聊天框，而是用户已经发生的真实事件。</p>
+<h4 id="heading-89">数字收藏给“记录”增加情感价值</h4>
+<p>证据：官方FishBook、Aquarium、鱼种插画、计数、命名演示。【官／媒】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a><a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a></p>
+<p>评价：它不只是把相册结构化，还把渔获变成可积累的身份表达。</p>
+<h4 id="heading-90">存在真实用户和商业化信号</h4>
+<p>证据：官方评分、用户长记录评论、历史下载披露、创始人2026年3月月收入自述。【官／创／评】<a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a><a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a><a class="citation" href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer" title="来源 8 · 打开原始页面">[8]</a></p>
+<p>评价：不止是概念网页；但不能据此推导当前经营健康。</p>
+<h3 id="section-11-2">11.2 缺点</h3>
+<h4 id="heading-92">付费预期管理不足</h4>
+<p>证据：当前核心功能订阅声明，与多时间点“注册后才看到付费”评论。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<h4 id="heading-93">核心任务可靠性风险</h4>
+<p>证据：近期上传、识别卡住和崩溃报告。【评】<a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<h4 id="heading-94">社交承诺可能跑在社交可用性前面</h4>
+<p>证据：Crew宣传与邀请困惑、本地无用户反馈并存。【官／评】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a></p>
+<h4 id="heading-95">尺寸与排名的可信解释不足</h4>
+<p>证据：有估计与榜单宣称，未找到公开精度及计分／验证规则。【官＋研究缺口】<a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a></p>
+<h3 id="section-11-3">11.3 可见机会</h3>
+<p>以下均为分析，不是声称产品方已计划：</p>
+<ul>
+<li>基础日志与高成本AI能力分开，减少朋友加入阻力。</li>
+<li>识别失败仍能保存草稿或手工记录，解除单点依赖。</li>
+<li>比较模式明确区分“娱乐估计”和“验证测量”。</li>
+<li>优先修复Crew邀请和小群体复用，而不是只追全球下载。</li>
+<li>将数据可导出、历史记录可靠访问作为长期信任资产。</li>
+<li>更清楚地说明识别范围、误差和位置隐私。</li>
+</ul>
+<h3 id="section-11-4">11.4 主要风险</h3>
+<ul>
+<li>爆款内容带来的下载无法转化为持续使用。</li>
+<li>收入与维护投入脱节，积累技术和客服债。</li>
+<li>支付成功但主任务失败，损害信任。</li>
+<li>榜单争议超过其娱乐价值。</li>
+<li>与成熟社区比工具深度、与专业比赛比认证能力，两边都可能不占优。</li>
+</ul>
+<p>最终判断：</p>
+<p>Catchr值得研究的不是“随便接一个识鱼API就能赚钱”，而是它把现实行为包装成可积累、可比较、可传播的数字成果。与此同时，近期证据说明：漂亮结果页只是产品的一部分，持续可靠性可能才是更难的部分。</p>
+</section><section class="report-section"><h2 id="chapter-12">十二、对动物与生活兴趣类AI产品的借鉴</h2>
+<p>以下仅为面向公开产品展示、内容分享与真实招聘窗口的通用产品建议，不以营收为验证目标，不代表已经立项或开始建设。</p>
+<h3 id="section-12-1">12.1 借什么、不借什么</h3>
+<p>值得借：
+真实行为→AI结构化／创作→个人收藏→自愿分享→再次记录。</p>
+<p>不宜直接借：</p>
+<ul>
+<li>无法验证的宠物体型、健康或情绪评分。</li>
+<li>公开“谁的宠物更好”排名。</li>
+<li>为留存要求用户每天高强度上传。</li>
+<li>一开始就做大社区、复杂队伍和无限生成。</li>
+<li>让AI失败阻止用户保存原始记录。</li>
+<li>用产品品牌掩盖经营主体真实业务或岗位职责。</li>
+</ul>
+<h3 id="section-12-2">12.2 建议验证：“宠物生活收藏册＋每周小电影”</h3>
+<p>用户用自己授权的真实宠物照片，记录一次散步、玩耍、睡姿或家庭日常。</p>
+<p>一次完整体验：</p>
+<ol>
+<li>上传1—3张照片，手工选择事件，不推断健康或心理状态。</li>
+<li>AI生成可编辑的短日记。</li>
+<li>基于授权照片生成一张主题插画卡。</li>
+<li>用户主动选择时，生成一段有AI标识的图生视频短片。</li>
+<li>原照片、文字、图片和视频进入同一事件收藏。</li>
+<li>一周后生成可回看的精选页，用户自己决定是否分享。</li>
+</ol>
+<p>视频必须是真正模型生成，不把照片转场假称AI视频；模型和授权需另行核查，本报告不替其作成本或一致性保证。</p>
+<h3 id="section-12-3">12.3 最小范围</h3>
+<p>建议先做受控演示／限额试用：</p>
+<ul>
+<li>3种事件模板、2种视觉风格。</li>
+<li>照片及文字可直接保存，生成失败不丢记录。</li>
+<li>不开放自由社区和公开评论。</li>
+<li>分享只生成用户主动选择的页面。</li>
+<li>每用户／每天／全局视频预算都有上限。</li>
+<li>去除EXIF；含人脸、儿童或无授权内容时限制处理。</li>
+<li>明确AI生成、删除入口、留存期限及模型服务地区。</li>
+<li>公共展示使用已授权样本。</li>
+<li>招聘页如实说明经营主体、团队和岗位实际工作。</li>
+</ul>
+<h3 id="section-12-4">12.4 只验证四件事，不设营收指标</h3>
+<p>建议先招募一小组自愿宠物主做两周测试，样本量可暂定15—20人，仅用于方向判断，不作为统计显著实验。</p>
+<p>指标：</p>
+<ul>
+<li>首次成功率：开始上传的人，有多少完成“保存一条真实事件＋至少一种生成结果”。</li>
+<li>可靠性：文字／图片／视频分别的成功率、P50／P95耗时和人工介入次数。</li>
+<li>自发复用：两周内是否有人记录第二、第三个不同事件，而非被提醒后刷次数。</li>
+<li>内容价值：用户是否愿意保留、下载或主动分享，以及为什么。</li>
+</ul>
+<p>另记录每个完整事件的实际成本和支持时间。</p>
+<p>判断原则：
+如果大家只觉得首次生成好看，却不愿记录下一次真实生活，就先改善内容价值，不应直接加榜单或做社区。</p>
+<hr/>
+</section><section class="report-section"><h2 id="video-checks">仍需观看核验的视频与具体问题</h2>
+<p>这些原视频页本轮公开读取均返回200；以下内容覆盖目前仍只依据页面描述，没有观看验证。</p>
+<ol>
+<li>
+<p><a href="https://www.tiktok.com/@brock.fishes5/video/7507396704845516063" rel="noopener noreferrer">https://www.tiktok.com/@brock.fishes5/video/7507396704845516063</a><br/>
+   请确认：长度／重量如何出现？是否由AI直接填入？能否修改？命名和备注发生在保存前还是后？有没有榜单提交动作？</p>
+</li>
+<li>
+<p><a href="https://www.tiktok.com/@brock.fishes5/video/7506704020044549418" rel="noopener noreferrer">https://www.tiktok.com/@brock.fishes5/video/7506704020044549418</a><br/>
+   请确认：榜单按什么字段排序？有无朋友／全球／物种筛选？是否真的展示一次提交导致排名变化，还是仅展示现有榜单？</p>
+</li>
+<li>
+<p><a href="https://www.tiktok.com/@brock.fishes5/video/7494157072079047967" rel="noopener noreferrer">https://www.tiktok.com/@brock.fishes5/video/7494157072079047967</a><br/>
+   请确认：是否现场拍摄、处理过程是否剪辑、结果是否包含尺寸、是否要求参照物、是否展示收藏成功。</p>
+</li>
+</ol>
+<p>视频无法回答当前注册和付费路径；即使观看，也不应将2025年演示当作2026年当前实机流程。</p>
+</section><section class="report-section"><h2 id="sources">来源索引</h2>
+<p>以下均在本轮或连续研究中实开核对；读取失败的法律页单独列明。</p>
+<h3 id="heading-105">官方及原始资料</h3>
+<p id="source-1"><a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer" title="来源 1 · 打开原始页面">[1]</a> 美国区 App Store：当前描述、截图、内购、版本历史、隐私标签。检索2026-11-09。<br/>
+<a href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660" rel="noopener noreferrer">https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660</a></p>
+<p id="source-2"><a class="citation" href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer" title="来源 2 · 打开原始页面">[2]</a> Apple 官方 Lookup：首次发布、当前版本时间、Bundle ID、卖方、评分与官方截图地址。检索2026-11-09。<br/>
+<a href="https://itunes.apple.com/lookup?id=6744193660&amp;country=us" rel="noopener noreferrer">https://itunes.apple.com/lookup?id=6744193660&amp;country=us</a></p>
+<p id="source-3"><a class="citation" href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer" title="来源 3 · 打开原始页面">[3]</a> Apple 官方最近文字评论RSS：本轮读取50条；评论日期已转换为北京时间。<br/>
+<a href="https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json" rel="noopener noreferrer">https://itunes.apple.com/us/rss/customerreviews/id=6744193660/sortBy=mostRecent/json</a></p>
+<p id="source-4"><a class="citation" href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer" title="来源 4 · 打开原始页面">[4]</a> App Store 评论页：历史开发者回复、试用、一次性付款及用户反馈。<br/>
+<a href="https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews" rel="noopener noreferrer">https://apps.apple.com/us/app/catchr-fish-identifier/id6744193660?platform=ipad&amp;see-all=reviews</a></p>
+<p id="source-5"><a class="citation" href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer" title="来源 5 · 打开原始页面">[5]</a> Google Play：Android运营显示、功能介绍、数据安全及评论。检索2026-11-09。<br/>
+<a href="https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx" rel="noopener noreferrer">https://play.google.com/store/apps/details?hl=en_US&amp;id=com.steelecodes.fishdexx</a></p>
+<p id="source-6"><a class="citation" href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer" title="来源 6 · 打开原始页面">[6]</a> Georgia Tech，2026-01-05，创业、增长与出售报道。<br/>
+<a href="https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition" rel="noopener noreferrer">https://news.research.gatech.edu/2026/01/05/georgia-tech-students-fishing-app-catchr-becomes-global-hit-acquisition</a></p>
+<p id="source-7"><a class="citation" href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer" title="来源 7 · 打开原始页面">[7]</a> Matt Steele出售公告，发布时间为2025-09-20北京时间。<br/>
+<a href="https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz" rel="noopener noreferrer">https://www.linkedin.com/posts/mattpsteele_i-just-sold-my-college-startup-after-activity-7374835171507773441-xJWz</a></p>
+<p id="source-8"><a class="citation" href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer" title="来源 8 · 打开原始页面">[8]</a> Brock Anderson招聘及“$15k/mo”原始披露，2026-03-24北京时间。<br/>
+<a href="https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi" rel="noopener noreferrer">https://www.linkedin.com/posts/brock-anderson-126125230_looking-for-a-founding-engineer-for-catchr-activity-7442004608081645569-zBxi</a></p>
+<h3 id="heading-106">增长、演示与截图档案</h3>
+<p id="source-9"><a class="citation" href="https://playkit.beehiiv.com/p/fish-id-app" rel="noopener noreferrer" title="来源 9 · 打开原始页面">[9]</a> Nick Sanchez／Playkit，《Fish ID App》，2025-07-22。营销案例分析，非独立实测或审计。<br/>
+<a href="https://playkit.beehiiv.com/p/fish-id-app" rel="noopener noreferrer">https://playkit.beehiiv.com/p/fish-id-app</a></p>
+<p id="source-10"><a class="citation" href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer" title="来源 10 · 打开原始页面">[10]</a> 保存与命名短片的具体索引页，含原视频链接和内容描述。<br/>
+<a href="https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01" rel="noopener noreferrer">https://viralswipefile.com/videos/0e1b570c-3d03-4cfa-b9b4-298364b08e01</a></p>
+<p id="source-11"><a class="citation" href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer" title="来源 11 · 打开原始页面">[11]</a> 排行榜短片的具体索引页。<br/>
+<a href="https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503" rel="noopener noreferrer">https://viralswipefile.com/videos/1968dc75-a336-4a47-bb6e-b29dfe15a503</a></p>
+<p id="source-12"><a class="citation" href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer" title="来源 12 · 打开原始页面">[12]</a> 蓝鳃太阳鱼扫描短片的具体索引页。<br/>
+<a href="https://darkugc.com/video/tt-7494157072079047967" rel="noopener noreferrer">https://darkugc.com/video/tt-7494157072079047967</a></p>
+<p id="source-13"><a class="citation" href="https://www.paywallscreens.com/apps/catchr-digital-livewell-mobile-paywall-6604" rel="noopener noreferrer" title="来源 13 · 打开原始页面">[13]</a> PaywallScreens：关联App ID的付费墙档案；页面标注2026-10-26，版本信息较旧，价格非当前统一承诺。<br/>
+<a href="https://www.paywallscreens.com/apps/catchr-digital-livewell-mobile-paywall-6604" rel="noopener noreferrer">https://www.paywallscreens.com/apps/catchr-digital-livewell-mobile-paywall-6604</a><br/>
+实际读取的截图：<br/>
+<a href="https://cdn.paywallscreens.com/6744193660/paywall-1793021671539.png" rel="noopener noreferrer">https://cdn.paywallscreens.com/6744193660/paywall-1793021671539.png</a></p>
+<h3 id="heading-107">相邻产品官方资料</h3>
+<p id="source-14"><a class="citation" href="https://fishbrain.com/" rel="noopener noreferrer" title="来源 14 · 打开原始页面">[14]</a> Fishbrain官网：定位、日志、照片识鱼、位置隐私。<br/>
+<a href="https://fishbrain.com/" rel="noopener noreferrer">https://fishbrain.com/</a></p>
+<p id="source-15"><a class="citation" href="https://support.fishbrain.com/hc/en-us/articles/22539021061020-How-do-I-log-a-catch-iOS" rel="noopener noreferrer" title="来源 15 · 打开原始页面">[15]</a> Fishbrain官方帮助：明确填写重量、长度及选择位置隐私。<br/>
+<a href="https://support.fishbrain.com/hc/en-us/articles/22539021061020-How-do-I-log-a-catch-iOS" rel="noopener noreferrer">https://support.fishbrain.com/hc/en-us/articles/22539021061020-How-do-I-log-a-catch-iOS</a></p>
+<p id="source-16"><a class="citation" href="https://fishbrain.com/pro" rel="noopener noreferrer" title="来源 16 · 打开原始页面">[16]</a> Fishbrain Pro官方页。<br/>
+<a href="https://fishbrain.com/pro" rel="noopener noreferrer">https://fishbrain.com/pro</a></p>
+<p id="source-17"><a class="citation" href="https://www.fishangler.com/" rel="noopener noreferrer" title="来源 17 · 打开原始页面">[17]</a> FishAngler官网。<br/>
+<a href="https://www.fishangler.com/" rel="noopener noreferrer">https://www.fishangler.com/</a></p>
+<p id="source-18"><a class="citation" href="https://blog.fishangler.com/fishangler-introduces-fishial-ai-species-recognition/" rel="noopener noreferrer" title="来源 18 · 打开原始页面">[18]</a> FishAngler官方Fishial.ai合作文章，2022-05-18。<br/>
+<a href="https://blog.fishangler.com/fishangler-introduces-fishial-ai-species-recognition/" rel="noopener noreferrer">https://blog.fishangler.com/fishangler-introduces-fishial-ai-species-recognition/</a></p>
+<p id="source-19"><a class="citation" href="https://www.fishangler.com/vip" rel="noopener noreferrer" title="来源 19 · 打开原始页面">[19]</a> FishAngler VIP官方页。<br/>
+<a href="https://www.fishangler.com/vip" rel="noopener noreferrer">https://www.fishangler.com/vip</a></p>
+<p id="source-20"><a class="citation" href="https://www.anglersleaderboard.com/" rel="noopener noreferrer" title="来源 20 · 打开原始页面">[20]</a> Anglers Leaderboard官方页：专用PhotoMeasure板、自动测量及排行榜。<br/>
+<a href="https://www.anglersleaderboard.com/" rel="noopener noreferrer">https://www.anglersleaderboard.com/</a></p>
+<p id="source-21"><a class="citation" href="https://fishmasterslive.com/" rel="noopener noreferrer" title="来源 21 · 打开原始页面">[21]</a> Fish Masters Live官方页：现场测量、LiDAR／ARKit、比赛和审核机制。<br/>
+<a href="https://fishmasterslive.com/" rel="noopener noreferrer">https://fishmasterslive.com/</a></p>
+<p id="source-22"><a class="citation" href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/92/0b/22920b93-3fe6-9c4e-d763-ce3e76cf0247/7.jpg/600x1300bb.jpg" rel="noopener noreferrer" title="来源 22 · 打开原始页面">[22]</a> Catchr官方第七张截图：Crew创建入口。<br/>
+<a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/92/0b/22920b93-3fe6-9c4e-d763-ce3e76cf0247/7.jpg/600x1300bb.jpg" rel="noopener noreferrer">https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/92/0b/22920b93-3fe6-9c4e-d763-ce3e76cf0247/7.jpg/600x1300bb.jpg</a></p>
+<h3 id="heading-108">主体核对、排除资料与读取缺口</h3>
+<p id="source-23"><a class="citation" href="https://apps.apple.com/us/developer/smolworks-inc/id1807171666" rel="noopener noreferrer" title="来源 23 · 打开原始页面">[23]</a> Smolworks官方App Store开发者页，列出Catchr。<br/>
+<a href="https://apps.apple.com/us/developer/smolworks-inc/id1807171666" rel="noopener noreferrer">https://apps.apple.com/us/developer/smolworks-inc/id1807171666</a></p>
+<p id="source-24"><a class="citation" href="https://peekly.app/apps/01ceec0c-fb3f-4dfb-95e5-9fbc98be4765" rel="noopener noreferrer" title="来源 24 · 打开原始页面">[24]</a> Peekly第三方估算页：存在内部矛盾，未采用其财务、下载或评分数字。<br/>
+<a href="https://peekly.app/apps/01ceec0c-fb3f-4dfb-95e5-9fbc98be4765" rel="noopener noreferrer">https://peekly.app/apps/01ceec0c-fb3f-4dfb-95e5-9fbc98be4765</a></p>
+<p id="source-25"><a class="citation" href="https://getcatchr.com/privacy" rel="noopener noreferrer" title="来源 25 · 打开原始页面">[25]</a> 商店关联法律页面：本轮返回500／连接失败，未读取正文，法律主体和条款未知。<br/>
+<a href="https://getcatchr.com/privacy" rel="noopener noreferrer">https://getcatchr.com/privacy</a><br/>
+<a href="https://getcatchr.com/terms" rel="noopener noreferrer">https://getcatchr.com/terms</a></p>
+<h3 id="heading-109">最重大的未知</h3>
+<p>收购买方与结构、当前法律运营主体、现行统一价格与试用、注册权限精确顺序、AI模型与误差、尺寸可编辑性、榜单计分和反作弊、位置默认隐私、数据留存和训练用途、当前月活／付费用户／收入／利润。</p>
+<p>这些未知不会推翻“Catchr曾验证现实行为＋AI结果＋收藏社交的吸引力”，但足以阻止我们把它包装成已经证明低维护、高利润、精确测量或长期运营成功的案例。</p></section></article>
+<footer class="footer">公开研究报告 · 研究日期 2026-11-09，北京时间（UTC+8）。<br>来源图片仅保留链接，未嵌入或冒充原创截图。本页不加载外部脚本、字体、图像或追踪器；未注册、未付费、未发布。</footer></main></div><a href="#top" class="back-top" aria-label="回到顶部" title="回到顶部">↑</a>
+</body></html>
