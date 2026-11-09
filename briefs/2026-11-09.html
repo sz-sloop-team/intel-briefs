@@ -1,0 +1,189 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 成人陪伴行业周报 · 2026-11-09</title><style>
+:root{--tx:#1d2330;--mut:#6b7385;--line:#e7e9ef;--bg:#f7f8fb;--acc:#7c4dff;--pink:#e2457a;--up:#16a34a;--down:#dc2626}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+header{max-width:1180px;margin:auto;padding:48px 28px 12px}.k{color:var(--acc);font-weight:700;letter-spacing:.18em;font-size:13px}
+h1{font-size:clamp(28px,4.5vw,44px);margin:.15em 0;letter-spacing:-.01em}.d{color:var(--mut)}
+nav{position:sticky;top:0;z-index:5;background:rgba(247,248,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;gap:6px;overflow-x:auto;padding:10px max(28px,calc((100vw - 1180px)/2 + 28px));scrollbar-width:none}
+nav a{white-space:nowrap;text-decoration:none;color:var(--tx);font-size:14px;padding:6px 14px;border-radius:999px;background:#fff;border:1px solid var(--line)}nav a:hover{border-color:var(--acc);color:var(--acc)}
+main{max-width:1180px;margin:auto;padding:12px 28px 60px}
+section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 30px;margin:24px 0;scroll-margin-top:70px;box-shadow:0 1px 2px rgba(20,30,60,.04)}
+section.bare{background:none;border:0;box-shadow:none;padding:0}
+h2{font-size:24px;margin:0 0 18px;display:flex;align-items:center;gap:10px}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.hc{display:block;text-decoration:none;color:var(--tx);background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;transition:.15s}
+.hc:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(124,77,255,.12)}
+.hm{font-size:38px;font-weight:800;line-height:1.1;background:linear-gradient(90deg,var(--acc),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:8px}
+.ht{font-size:17px;font-weight:600;line-height:1.45}
+.tier{margin-bottom:26px}.th{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.note{color:var(--mut);font-size:14px}
+.badge{font-weight:800;font-size:14px;padding:4px 14px;border-radius:999px;color:#fff}.badge.head{background:#f59e0b}.badge.mid{background:#3b82f6}.badge.new{background:#10b981}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+.pc{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fcfcfe}
+.pt{display:flex;align-items:center;gap:8px}.pn{font-weight:800;font-size:17px;flex:1}.pp{color:var(--mut);font-size:14px;margin:4px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{font-size:12.5px;padding:3px 9px;border-radius:999px;background:#f1f2f6;white-space:nowrap}
+.chip.price{background:#efe9ff;color:#5b34d6}.chip.traf{background:#eef4ff;color:#1e40af}.chip.up{background:#e7f8ee;color:var(--up)}.chip.down{background:#fdecec;color:var(--down)}.chip.mut{color:var(--mut)}
+b.up{color:var(--up);margin-right:3px}b.down{color:var(--down);margin-right:3px}
+a.src{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:7px;background:#f1f2f6;color:var(--acc);text-decoration:none;font-weight:700;font-size:13px}a.src:hover{background:var(--acc);color:#fff}
+.rf{font-size:12px;font-weight:800;color:#fff;background:var(--down);padding:2px 9px;border-radius:999px}.red{color:var(--down)}
+ul.b1{list-style:none;padding:0;margin:0}ul.b1 li{padding:9px 0 9px 22px;position:relative;border-bottom:1px dashed var(--line)}ul.b1 li:last-child{border:0}
+ul.b1 li:before{content:"";position:absolute;left:4px;top:19px;width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ac{border-radius:16px;padding:18px 20px}.ac h3{margin:0 0 8px;font-size:20px}
+.ac ul{margin:0;padding-left:18px}.ac li{margin:6px 0}.bor{background:#eef4ff}.bor h3{color:#1d4ed8}.def{background:#fdecec}.def h3{color:#b91c1c}.try{background:#e7f8ee}.try h3{color:#15803d}
+details{margin-top:16px;border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer;color:var(--acc);font-weight:600;font-size:15px}
+.full{font-size:15px;color:#333}.full table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}.full th,.full td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.full a,section a:not(.src):not(.hc){color:var(--acc)}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:10px 0 40px}
+@media(max-width:760px){.acts{grid-template-columns:1fr}section{padding:20px 18px}main,header{padding-left:16px;padding-right:16px}body{font-size:16px}.hm{font-size:32px}}
+@media print{nav{display:none}body{background:#fff}section,.hc,.pc{break-inside:avoid;box-shadow:none}details{display:block}details>*{display:block}}
+</style></head><body>
+<header><div class="k">SEXLOOP · 情报研究部</div><h1>AI 成人陪伴行业周报</h1><div class="d">2026-11-09 · 覆盖 11/03–11/09 · 只写增量 · 流量均为第三方估算</div></header>
+<nav><a href="#hero">要点</a><a href="#track">上期跟踪</a><a href="#land">赛道全景</a><a href="#dyn">动态与数据</a><a href="#grow">增长打法</a><a href="#risk">合规</a><a href="#act">行动建议</a><a href="#more">值得关注</a></nav>
+<main>
+<section id="hero" class="bare"><div class="hero">
+<a class="hc" href="https://developer.apple.com/news/?id=yxkh08us" target="_blank" rel="noopener"><div class="hm">Apple 18+</div><div class="ht">Dating and Relationships 描述符；声明截止 2027-01-12</div></a>
+<a class="hc" href="https://elizareport.com/laws/uk-pornography-offences-2026/" target="_blank" rel="noopener"><div class="hm">UK 11/6</div><div class="ht">真实感成人图新罪：s104/106/107 英格兰威尔士生效</div></a>
+<a class="hc" href="https://elizareport.com/changelog/" target="_blank" rel="noopener"><div class="hm">C.AI</div><div class="ht">「更新」截标改 11/24；拍卖 12/01；听证 12/03–04</div></a>
+<a class="hc" href="https://linear.app/sexloop/issue/SEX-503" target="_blank" rel="noopener"><div class="hm">SEX-503</div><div class="ht">短剧主导航 Backlog → In Progress（约 11/03）</div></a>
+<a class="hc" href="https://elizareport.com/changelog/" target="_blank" rel="noopener"><div class="hm">Candy+</div><div class="ht">Plans 透明度变化；Kindroid 年龄/安全 hub</div></a>
+</div></section>
+<section id="track"><h2>上期需求跟踪</h2>
+<ul class="b1">
+<li><b>SEX-481 连续短剧</b>：Done → <span style="color:#15803d">已完成</span> <a class="src" href="https://linear.app/sexloop/issue/SEX-481" target="_blank" rel="noopener">↗</a></li>
+<li><b>SEX-483 金币价格透明</b>：In Review → <span style="color:#1d4ed8">进行中</span>（状态未变） <a class="src" href="https://linear.app/sexloop/issue/SEX-483" target="_blank" rel="noopener">↗</a></li>
+<li><b>SEX-503 短剧主导航</b>：Backlog → <span style="color:#1d4ed8">进行中</span>（<b>状态变化</b>，约 11/03） <a class="src" href="https://linear.app/sexloop/issue/SEX-503" target="_blank" rel="noopener">↗</a></li>
+<li><b>SEX-482 / 496–499 / 502 / 504</b>：Backlog → <span style="color:#6b7385">仍在池</span></li>
+</ul>
+<details><summary>展开完整内容</summary><div class="full">
+<p>上期（11/02）及更早入库的【情报研究部】条目，本周在 Linear「需求池」状态如下：</p>
+<table>
+<thead><tr><th>Issue</th><th>标题</th><th>Linear 状态</th><th>报告侧标注</th></tr></thead>
+<tbody>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-481">SEX-481</a></td><td>用现有场景做连续短剧</td><td>Done</td><td><strong>已完成</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-483">SEX-483</a></td><td>公开每次动作的金币价格</td><td>In Review</td><td><strong>进行中</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-482">SEX-482</a></td><td>上线语音能力</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-496">SEX-496</a></td><td>轻量自定义角色</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-497">SEX-497</a></td><td>首期与续费价同屏</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-498">SEX-498</a></td><td>禁止假直播人数</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-499">SEX-499</a></td><td>首月优惠 A/B</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-502">SEX-502</a></td><td>多州 2027 年龄核验</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-503">SEX-503</a></td><td>短剧主导航 + 固定更新节奏</td><td>In Progress</td><td><strong>进行中</strong>（相对上期 Backlog <strong>状态变化</strong>）</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-504">SEX-504</a></td><td>成人广告网络小预算试验</td><td>Backlog</td><td><strong>仍在池</strong></td></tr>
+</tbody>
+</table>
+<p>要点：<strong>SEX-503 约 11/03 进入 In Progress</strong>；10/26 批次 496–499 仍在池；其余大多无变。</p>
+</div></details></section>
+<section id="land"><h2>赛道分层全景</h2>
+<div class="tier"><div class="th"><span class="badge head">头部</span><span class="note">本周变化</span></div><div class="grid">
+<div class="pc"><div class="pt"><span class="pn">Character.AI</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」截标 11/24；拍卖 12/01；听证 12/03–04</div><div class="chips"><span class="chip up">日程后移</span><span class="chip mut">Delaware 26-11603</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">OurDream</span><a class="src" href="https://ourdream.ai/updates/feature-friday-13" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」FF#13：save frame 不扣币</div><div class="chips"><span class="chip up">FF#13</span><span class="chip mut">Halloween 至 11/1</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Candy AI</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」Plans 只露折合月价</div><div class="chips"><span class="chip mut">仅观察透明度</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Chai</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">仍离 App Store；导流官网</div><div class="chips"><span class="chip mut">仅观察</span></div></div>
+</div></div>
+<div class="tier"><div class="th"><span class="badge mid">中部</span><span class="note">安全 / 支付 / 审核</span></div><div class="grid">
+<div class="pc"><div class="pt"><span class="pn">Kindroid</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」健康提示；Yoti 21+；Safety hub</div><div class="chips"><span class="chip down">礼码≠年龄核验</span><span class="chip up">清欺诈号</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Janitor AI</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」年付 $99 / 折合 $8.25</div><div class="chips"><span class="chip price">省 36%</span><span class="chip mut">仅观察</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Replika</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">「更新」18+ 解锁年龄检</div><div class="chips"><span class="chip mut">相对 SEX-502 仅观察</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Promptchan</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">整段 prompt 审核；拒答不扣费</div><div class="chips"><span class="chip mut">仅观察</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">SoulGen</span><a class="src" href="https://elizareport.com/changelog/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">积分表去掉 2.0 视频行</div><div class="chips"><span class="chip mut">仅观察</span></div></div>
+</div></div>
+<div class="tier"><div class="th"><span class="badge new">最新</span><span class="note">商店普查 / 导航站 / 周边</span></div><div class="grid">
+<div class="pc"><div class="pt"><span class="pn">Apple 普查</span><a class="src" href="https://elizareport.com/stores/apple-18-plus-ai-companion-apps/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">541 应用：420 已 18+；121 低于</div><div class="chips"><span class="chip down">22 售女友话术&lt;18+</span><span class="chip mut">评级≠年龄核验</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Sexloop</span><a class="src" href="https://aihaven.com/new/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">AI Haven 仍列 Freemium 近期</div><div class="chips"><span class="chip up">仍在列表</span></div></div>
+<div class="pc"><div class="pt"><span class="pn">Meta Muse</span><a class="src" href="https://aihaven.com/news/" target="_blank" rel="noopener" title="来源">↗</a></div><div class="pp">视频聊天等新闻</div><div class="chips"><span class="chip mut">非成人 · 仅观察</span></div></div>
+</div></div>
+<details><summary>展开完整内容</summary><div class="full">
+<p><strong>头部</strong>：C.AI 出售节点后移；OurDream FF#13 已核验；Candy Plans 透明度变化（仅观察）；Chai 仍不在商店（仅观察）。</p>
+<p><strong>中部</strong>：Kindroid 安全/年龄；Janitor 年付；Replika 18+ 检；Promptchan 整段审核；SoulGen 积分表调整——后四项仅观察。</p>
+<p><strong>最新</strong>：Eliza 苹果陪伴普查；Sexloop 仍在 AI Haven New；Meta Muse 等周边仅观察。</p>
+</div></details></section>
+<section id="dyn"><h2>竞品动态与营收</h2>
+<ul class="b1">
+<li><b>OurDream FF#13</b>：save frame 不扣币；Halloween 至 11/1</li>
+<li><b>Candy</b>：Plans 只露折合月价（仅观察）</li>
+<li><b>Kindroid</b>：健康提示 + Yoti 21+ + Safety hub</li>
+<li><b>Janitor / Replika / Promptchan</b>：年付与年龄/审核——仅观察</li>
+</ul>
+<details><summary>展开完整内容</summary><div class="full"><ul>
+<li>「更新」<strong>OurDream FF#13</strong>（约 11/01）：自有解锁视频 save frame 存图、不扣币；Halloween 订阅加赠与币包加赠至 11/01 23:59 PT；另有静音、预设文件夹、feed 屏蔽尊重拉黑等。<a target="_blank" rel="noopener" href="https://ourdream.ai/updates/feature-friday-13">官方更新页</a></li>
+<li>「更新」<strong>Candy Plans</strong>：三卡只显示折合月价；去掉账单总额与「同价同期限自动续订」等说明（仅观察）。<a target="_blank" rel="noopener" href="https://elizareport.com/changelog/">Eliza</a></li>
+<li>「更新」<strong>Kindroid</strong>：医疗建议健康提示（至多每周一次）、聊天传文件、清 &gt;5000 欺诈/逃封号；Safety &amp; Policies；礼码不计年龄核验；Yoti 须估 21+。<a target="_blank" rel="noopener" href="https://elizareport.com/changelog/">Eliza</a></li>
+<li>「更新」<strong>Janitor 年付</strong>、$99/年折合 $8.25；商店现显示年付（仅观察）。</li>
+<li>「更新」<strong>Replika</strong> 解锁 18+ 年龄检；英美用户约 11/02 报自拍——相对 SEX-502 仅观察。</li>
+<li><strong>Promptchan / SoulGen / Chai</strong>：审核、积分表、仍离商店——仅观察。</li>
+</ul></div></details>
+<details><summary>展开营收与数据</summary><div class="full"><ul>
+<li><strong>本周未见 SeekTool / AlphaMoat / Arktan 新月数据刷新</strong>（数据月仍约停在 2026-08）。</li>
+<li>Candy / Janitor / SoulGen 价格展示变化属<strong>产品页自报</strong>，非独立营收核验。</li>
+<li>OurDream Halloween 币包加赠属促销自报，窗已于 11/01 结束。</li>
+</ul></div></details></section>
+<section id="grow"><h2>增长打法</h2>
+<ul class="b1">
+<li>解锁视频帧导出不扣币（OurDream FF#13）</li>
+<li>Plans「折合月价」展示变化（Candy，仅观察）</li>
+<li>X 联盟垃圾回复挂病毒帖（增长噪声）</li>
+<li>Janitor 年付上架 / Kindroid 清欺诈号</li>
+</ul>
+<details><summary>展开完整内容</summary><div class="full"><ul>
+<li><strong>降低二次创作摩擦</strong>：OurDream 对已解锁视频 save frame 不扣币。<a target="_blank" rel="noopener" href="https://ourdream.ai/updates/feature-friday-13">FF#13</a></li>
+<li><strong>价页展示</strong>：Candy 更偏折合月价——透明度变化，不宜照搬（仅观察）。</li>
+<li><strong>X 增长噪声</strong>：11/03–09 近乎同质联盟垃圾回复（Custom AI girlfriend 模板，低曝光），常挂病毒帖。宿主示例约 55 万浏览：<a target="_blank" rel="noopener" href="https://x.com/lexisoriya/status/2119165744130720215">X 帖</a> ——勿当竞品产品新闻。</li>
+<li>Janitor 年付、Kindroid 清欺诈：留存/风控侧信号（仅观察）。</li>
+</ul></div></details></section>
+<section id="risk"><h2>合规风险 <span class="note">只列新增</span></h2>
+<ul class="b1">
+<li><span class="rf">新</span> 苹果 Dating and Relationships + 18+；声明截止 2027-01-12</li>
+<li><span class="rf">新</span> 英威真实感成人图新罪（11/06 起）</li>
+<li><span class="rf">新</span> 欧盟 AI Act Art.50：周期性「你在与 AI 对话」披露</li>
+<li>「更新」NY Article 48 或调至 2027-06-01（提案人说法，enrolled 仍 1/1）</li>
+</ul>
+<details><summary>展开完整内容</summary><div class="full"><ul>
+<li><strong>苹果 Dating and Relationships</strong>：约 11/02 开发者新闻；11/16 ASC 描述符；虚拟伴侣性/浪漫最低 18+；声明截止 <strong>2027-01-12</strong>。<a target="_blank" rel="noopener" href="https://developer.apple.com/news/?id=yxkh08us">Apple</a>｜<a target="_blank" rel="noopener" href="https://elizareport.com/stores/apple-18-plus-ai-companion-apps/">Eliza</a>｜<a target="_blank" rel="noopener" href="https://aihaven.com/news/">AI Haven</a></li>
+<li><strong>英国 Crime and Policing Act 2026 s104/106/107</strong>（英格兰与威尔士，<strong>2026-11-06</strong>）：真实感露骨图像（含写实 AI）特定主题；卡通与纯文本聊天不在此列；持有最高约 2 年（涉未满 16 约 3 年）、发布最高约 5 年。Eliza：11/05 跟踪 26 个可出图应用中 8 个首页主推继亲属场景。<a target="_blank" rel="noopener" href="https://elizareport.com/laws/uk-pornography-offences-2026/">Eliza 解读</a></li>
+<li><strong>欧盟 AI Act Article 50</strong>：指引采纳日 Brussels 5.11.2026 C(2026) 7702 final；伴侣须告知在与机器对话；单次提示往往不够，需周期性/情境披露；Art.50 自 2026-08-02 已适用。<a target="_blank" rel="noopener" href="https://elizareport.com/changelog/">Eliza</a>｜<a target="_blank" rel="noopener" href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations">欧委会页</a></li>
+<li>「更新」<strong>纽约 Article 48</strong>：提案人签署稿称生效日或从 2027-01-01 调到 2027-06-01；enrolled 文本仍 1/1；改期需 2027 会期修正；Approval Memo 6 未公开——<strong>非确定延期</strong>。<a target="_blank" rel="noopener" href="https://elizareport.com/changelog/">Eliza</a></li>
+<li>「更新」Character.AI 出售节点后移；Kindroid/Replika 年龄 UX 加码旁证多州核验扩张（相对 SEX-502 仅观察细节）。</li>
+</ul></div></details></section>
+<section id="act"><h2>给 Sexloop 的行动建议</h2>
+<div class="acts">
+<div class="ac bor"><h3>借鉴</h3><ul>
+<li>推进短剧主导航（SEX-503）</li>
+<li>解锁内容可导出帧（仅观察）</li>
+<li>兑现 496/497/499/504</li>
+</ul></div>
+<div class="ac def"><h3>防守</h3><ul>
+<li>苹果 18+ 声明（SEX-508）</li>
+<li>英威真实感成图闸门（SEX-509）</li>
+<li>EU Art.50 周期性披露（SEX-510）</li>
+</ul></div>
+<div class="ac try"><h3>值得试</h3><ul>
+<li>508/509/510 + PostHog 验证</li>
+<li>Candy/Janitor/FF 细节仅观察</li>
+<li>X 联盟垃圾勿当产品信号</li>
+</ul></div>
+</div>
+<details><summary>展开完整内容</summary><div class="full"><ul>
+<li><strong>借鉴</strong></li>
+<li>继续推进 <strong>短剧主导航 + 节奏</strong>（已建 <a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-503">SEX-503</a>，In Progress）。</li>
+<li>OurDream FF#13「解锁内容可导出帧、不另扣币」——降低二次创作摩擦（仅观察，不硬建）。</li>
+<li>继续兑现 SEX-496 / 497 / 499 / 504。</li>
+<li><strong>防守</strong></li>
+<li><strong>App Store Connect「Dating and Relationships」声明与 18+ 下限</strong>（已建 <a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-508">SEX-508</a>）：对齐 11/16 描述符与 2027-01-12 截止。</li>
+<li><strong>英威真实感成人图合规闸门</strong>（已建 <a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-509">SEX-509</a>）：对齐 Crime and Policing Act 2026 s104/106/107（2026-11-06 起）。</li>
+<li><strong>欧盟 AI Act Article 50 周期性披露</strong>（已建 <a target="_blank" rel="noopener" href="https://linear.app/sexloop/issue/SEX-510">SEX-510</a>）。</li>
+<li>延续 SEX-502；语音 482、假直播 498 仍在池。</li>
+<li><strong>值得试</strong></li>
+<li>为 SEX-508/509/510 写清上线后 PostHog 事件/漏斗。</li>
+<li>「仅观察」：Candy 价展示、Janitor 年付、OurDream save-frame、Replika/Kindroid 年龄 UX、Promptchan、Chai 仍不在商店、Meta Muse、X 联盟垃圾、SoulGen、NY Article 48 或 6/1 生效说法。</li>
+</ul></div></details></section>
+<section id="more"><h2>值得关注</h2>
+<details open><summary>展开完整内容</summary><div class="full"><ul>
+<li><a target="_blank" rel="noopener" href="https://developer.apple.com/news/?id=yxkh08us">Apple Developer News — Dating and Relationships</a></li>
+<li><a target="_blank" rel="noopener" href="https://elizareport.com/stores/apple-18-plus-ai-companion-apps/">Eliza：苹果 18+ 陪伴应用</a></li>
+<li><a target="_blank" rel="noopener" href="https://elizareport.com/laws/uk-pornography-offences-2026/">Eliza：英国色情图像新罪</a></li>
+<li><a target="_blank" rel="noopener" href="https://elizareport.com/changelog/">Eliza Report changelog</a>（C.AI、Candy、Kindroid、Janitor、Replika、Promptchan、Art.50、SoulGen）</li>
+<li><a target="_blank" rel="noopener" href="https://ourdream.ai/updates/feature-friday-13">OurDream Feature Friday #13</a></li>
+<li><a target="_blank" rel="noopener" href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-transparency-obligations">欧委会 AI 透明度义务指引</a></li>
+<li><a target="_blank" rel="noopener" href="https://aihaven.com/news/">AI Haven News</a>｜<a target="_blank" rel="noopener" href="https://aihaven.com/new/">AI Haven New</a>（含 Sexloop Freemium）</li>
+<li>X 联盟垃圾宿主示例：<a target="_blank" rel="noopener" href="https://x.com/lexisoriya/status/2119165744130720215">帖子</a></li>
+</ul></div></details></section>
+</main><footer>所有数据均附来源 · 第三方估算、自报数字与推测已标注 · <a href="../index.html" style="color:inherit">往期</a></footer></body></html>
